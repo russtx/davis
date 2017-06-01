@@ -1,0 +1,29 @@
+/*======================================= mixins =================================================*/
+.blue-button{
+  display: block;
+  position: relative;
+  border: solid 1px $blue;
+  background-color: $blue;
+  color: #fff;
+  padding: 14px ;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  &:hover{
+    background-color: #fff;
+    color:$blue;
+  }
+}
+.solidFoundationButton{
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  height: 20px;
+  border: solid 1px $red;
+  border-radius: 10px;
+  text-align: center;
+  color: $red;
+  font-weight: 700;
+}

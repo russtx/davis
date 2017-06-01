@@ -1,0 +1,217 @@
+/* responsive settings */
+$screen-xl-min: 1600px;
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Sass Bootstrap */
+
+/* Small devices (tablets, 768px and up) ====================================================================================================*/
+@media (min-width: $screen-sm-min) {
+  .masthead{
+    height:45px;
+  }
+  .navbar-default{
+    display: block;
+    position: relative;
+    width: 365px;
+    margin:0 auto;
+    top:-90px;
+    .navbar-nav{
+      background-color: transparent;
+      li{
+        a{
+          color:$blue;
+          padding:10px;
+        }
+      }
+    }
+  }
+  .headerSocials{
+    display: block;
+    position: relative;
+    top:-47px;
+  }
+  .headerLogo{
+    margin-top:-70px;
+    img{
+      width: 200px;
+    }
+  }
+  .headerImage{
+    margin-top:-75px;
+    height:345px;
+    span.whiteArea{
+      height:100px;
+      top:245px;
+      img{
+        width: 75px;
+        margin: 15px 0 0 20px;
+        &:nth-child(1){
+          margin-left:100px
+        }
+      }
+    }
+  }
+  .services, .contracts, .training{
+    margin-top:50px;
+  }
+  .capabilities{
+    margin-top:-300px;
+    h1{
+      padding-bottom: 15px;
+      font-size: 50px;
+    }
+  }
+  .capabilitiesContentLink{
+    h2{
+      font-size: 14px;
+    }
+  }
+  .frogMan{
+    bottom: 45px;
+    max-height: 300px;
+  }
+  .our-clients{
+    margin-top:-300px;
+
+    h1{
+      padding-bottom: 15px;
+      font-size: 50px;
+    }
+  }
+  .clientArea{
+    img{
+      width: 92px;
+    }
+  }
+  .climbing-wall{
+    bottom: 45px;
+    max-height: 367px;
+  }
+  .solid-foundation{
+    background-position-x: 0px;
+  }
+  .solidFoundationContentArea{
+    top:50px;
+    padding: 0 50px;
+    h1{
+      font-size: 50px;
+    }
+    p{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    }
+    a.btn-main{
+      margin-top:60px;
+
+    }
+    a.left-side{
+      margin-left: 250px;
+    }
+  }
+  .whiteBand{
+    bottom: 0px;
+    h2{
+      font-size: 50px;
+      font-weight: 900;
+    }
+  }
+}
+/* Medium devices (desktops, 992px and up) ==================================================================================================*/
+@media (min-width: $screen-md-min) {
+  .headerImage{
+    height:410px;
+    span.whiteArea{
+      top:310px;
+    }
+  }
+  .services, .contracts, .training{
+    h2{
+      font-size: 32px;
+      font-weight: 900;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 500;
+    }
+    img{
+      margin: 40px 0 0 15px;
+    }
+  }
+  .capabilitiesContentLink{
+    h2{
+      font-size: 20px;
+    }
+    p{
+      font-size: 20px;
+      padding: 0 10px;
+      line-height: .7;
+    }
+  }
+  .frogMan{
+    max-height: 388px;
+  }
+  .clientArea{
+    img{
+      width: 122px;
+    }
+  }
+  .climbing-wall{
+    max-height: 472px;
+  }
+  .solidFoundationContentArea{
+    padding: 0 100px;
+  }
+}
+/* Large devices (large desktops, 1200px and up)============================================================================================ */
+@media (min-width: $screen-lg-min) {
+  .masthead{
+    a.btn-main{
+      padding: 10px;
+      font-size: 18px;
+    }
+  }
+  .headerImage{
+    height:490px;
+    span.whiteArea{
+      top:380px;
+      height: 110px;
+      img:nth-child(1){
+        margin-left:160px;
+      }
+    }
+  }
+  .capabilities{
+    margin-top: -360px;
+  }
+  .frogMan{
+    max-height: 480px;
+  }
+  .our-clients{
+    margin-top: -385px;
+  }
+  .climbing-wall{
+    max-height: 571px;
+  }
+}
+/* Large devices (large desktops, 1600px and up)============================================================================================ */
+@media (min-width: $screen-xl-min) {
+  .capabilities{
+    margin-top: -426px;
+  }
+  .frogMan{
+    max-height: 620px;
+  }
+  .our-clients{
+    margin-top:-435px;
+  }
+  .climbing-wall{
+    max-height: 755px;
+  }
+  .solid-foundation{
+    background-position-y: -270px;
+  }
+}

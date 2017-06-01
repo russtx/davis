@@ -1,0 +1,778 @@
+/*!
+Theme Name: davis-defense-group
+Author: Russ Berge
+Author URI: http://childressagency.com
+Description: This is a blank bootstrap theme for wordpress based on the Bootstrap Starter Wordpress theme by 3sparks llc. This version adds Gulp and the possibility to recompile Bootstrap css from Sass.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/***********
+standard bootstrap sizes
+************/
+/***********
+variables
+here you can set the bootstrap variables that you want
+full variables file is located in
+../src/bootstrap-sass-version/assets/stylesheets/bootstrap/_variables
+************/
+/***********
+import bootstrap
+************/
+/*======================================= Variables =================================================*/
+/*======================================= mixins =================================================*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.blue-button, .masthead a.btn-main {
+  display: block;
+  position: relative;
+  border: solid 1px #123d61;
+  background-color: #123d61;
+  color: #fff;
+  padding: 14px;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.blue-button:hover, .masthead a.btn-main:hover {
+  background-color: #fff;
+  color: #123d61;
+}
+
+.solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  height: 20px;
+  border: solid 1px #822222;
+  border-radius: 10px;
+  text-align: center;
+  color: #822222;
+  font-weight: 700;
+}
+
+/*Wordpress basic styles (those inserted by the editor)*/
+.entry-content img {
+  margin: 0 0 1.5em 0;
+}
+
+.alignleft, img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+
+.alignright, img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+
+.aligncenter, img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+
+.alignnone, img.alignnone {
+  /* not sure about this one */
+}
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+.wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0;
+}
+
+.wp-smiley {
+  margin: 0 !important;
+  max-height: 1em;
+}
+
+blockquote.left {
+  margin-right: 20px;
+  text-align: right;
+  margin-left: 0;
+  width: 33%;
+  float: left;
+}
+
+blockquote.right {
+  margin-left: 20px;
+  text-align: left;
+  margin-right: 0;
+  width: 33%;
+  float: right;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Chathura', sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+body {
+  background-color: white;
+  font-family: 'Chathura', sans-serif;
+}
+
+/*======================= Header ============================================ */
+.masthead {
+  background: #fff;
+  z-index: 9999;
+  position: relative;
+  height: 95px;
+}
+
+.masthead a.btn-main {
+  text-decoration: none;
+}
+
+.masthead .left {
+  float: left;
+}
+
+.masthead .right {
+  float: right;
+}
+
+.navbar-default {
+  z-index: 9999;
+  background: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: #123d61;
+  border-color: #123d61;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(18, 61, 97, 0.5);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav {
+  background-color: rgba(18, 61, 97, 0.5);
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: #822222;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #fff;
+}
+
+.navbar-header button {
+  margin-top: -40px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #822222;
+}
+
+.headerSocials .twitter {
+  background: url(./images/twitter-sprite.png) no-repeat;
+  background-position-y: -27px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0 0 15px;
+}
+
+.headerSocials .twitter:hover {
+  background-position-y: 0px;
+}
+
+.headerSocials .facebook {
+  background: url(./images/facebook-sprite.png) no-repeat;
+  background-position-y: -27px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0 0 15px;
+}
+
+.headerSocials .facebook:hover {
+  background-position-y: 0px;
+}
+
+.in {
+  margin-bottom: 40px;
+}
+
+/*======================================= Main Css =================================================*/
+.header {
+  display: block;
+  width: 100%;
+}
+
+.headerLogo {
+  margin-top: -100px;
+}
+
+.headerLogo img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.headerImage {
+  height: 130px;
+  background: url(./images/home-header-image.png) no-repeat;
+  background-size: cover;
+  margin-top: -42px;
+}
+
+.headerImage span.whiteArea {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 60px;
+  margin-top: 50px;
+  top: 70px;
+}
+
+.headerImage span.whiteArea img {
+  width: 50px;
+  margin: 5px 0 0 10px;
+}
+
+.headerImage span.whiteArea img:nth-child(1) {
+  margin-left: 40px;
+}
+
+.services, .contracts, .training {
+  margin-top: 10px;
+}
+
+.services img, .contracts img, .training img {
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.services h2, .contracts h2, .training h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 0 0;
+  margin: 6px 0 0 0;
+}
+
+.services p, .contracts p, .training p {
+  font-size: 16px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #123d61;
+}
+
+.capabilities {
+  margin-top: -235px;
+}
+
+.capabilities h1 {
+  text-align: center;
+  color: #822222;
+  font-size: 36px;
+  font-weight: 900;
+  padding: 0 0 0 0;
+  margin: 6px 0 0 0;
+}
+
+.capabilitiesContentLink {
+  min-height: 160px;
+}
+
+.capabilitiesContentLink img {
+  display: block;
+  width: 69px;
+  margin: 0 auto;
+}
+
+.capabilitiesContentLink h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px 0;
+}
+
+.capabilitiesContentLink p {
+  text-align: center;
+  font-size: 16px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #123d61;
+}
+
+.capabilitiesContentLink a {
+  text-decoration: none;
+}
+
+.frogMan {
+  max-height: 130px;
+  height: 100%;
+  background: url(./images/frogman.png) no-repeat;
+  background-size: cover;
+  bottom: 95px;
+  position: absolute;
+  width: 100%;
+}
+
+.our-clients {
+  margin-top: -190px;
+}
+
+.our-clients h1 {
+  text-align: center;
+  color: #822222;
+  font-size: 36px;
+  font-weight: 900;
+  padding: 0 0 0 0;
+  margin: 6px 0 0 0;
+}
+
+.clientArea {
+  min-height: 100px;
+}
+
+.clientArea img {
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.climbing-wall {
+  max-height: 153px;
+  height: 100%;
+  background: url(./images/climbing-wall.png) no-repeat;
+  background-size: cover;
+  bottom: 95px;
+  position: absolute;
+  width: 100%;
+}
+
+.solid-foundation {
+  display: block;
+  background: url(./images/solid-foundation.png) no-repeat;
+  background-size: cover;
+  background-position-x: -32px;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.solidFoundationContentArea {
+  position: relative;
+  top: 0px;
+  padding-left: 15px;
+}
+
+.solidFoundationContentArea h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: right;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px 0;
+}
+
+.solidFoundationContentArea p {
+  text-align: right;
+  font-size: 16px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #123d61;
+}
+
+.solidFoundationContentArea a.btn-main {
+  float: left;
+  margin: 5px 0 0 25px;
+  text-decoration: none;
+}
+
+.whiteBand {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 245px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.whiteBand h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px 0;
+}
+
+.whiteBand a.btn-main {
+  text-decoration: none;
+}
+
+.whiteBandContent {
+  margin-top: 20px;
+}
+
+.background {
+  display: block;
+  background: url(./images/stay-updated.png) no-repeat;
+  background-size: cover;
+  background-position-x: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+.blogArea h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: left;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px 15px;
+}
+
+.redBox {
+  height: 50px;
+  background-color: rgba(130, 34, 34, 0.5);
+}
+
+.redBox h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px -7px;
+}
+
+.blueBox {
+  height: 100px;
+  background-color: rgba(18, 61, 97, 0.5);
+  margin-bottom: 20px;
+}
+
+.blueBox h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 0 0 0;
+  margin: 6px 0 6px 0;
+}
+
+.blueBox span p {
+  text-align: left;
+  font-size: 16px;
+  color: #123d61;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.blueBox p {
+  text-align: left;
+  font-size: 16px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #fff;
+}
+
+.blueBox a {
+  color: #fff;
+}
+
+.stay-updated a.btn-main {
+  text-decoration: none;
+}
+
+.stay-updated a.left-side {
+  float: left;
+  margin: 0 0 0 100px;
+}
+
+.stay-updated a.right-side {
+  float: left;
+  margin: 0 0 0 5px;
+}
+
+.whiteBand-2 {
+  display: block;
+  background: url(./images/overlay-background.png) no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.whiteBand-2 h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 18px 0 0 0;
+  margin: 6px 0 6px 15px;
+}
+
+.whiteBand-2 .twitter {
+  background: url(./images/twitter-2.png) no-repeat;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+
+.whiteBand-2 .facebook {
+  background: url(./images/facebook-2.png) no-repeat;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+/*================Footer =============*/
+/* responsive settings */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Sass Bootstrap */
+/* Small devices (tablets, 768px and up) ====================================================================================================*/
+@media (min-width: 768px) {
+  .masthead {
+    height: 45px;
+  }
+  .navbar-default {
+    display: block;
+    position: relative;
+    width: 365px;
+    margin: 0 auto;
+    top: -90px;
+  }
+  .navbar-default .navbar-nav {
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav li a {
+    color: #123d61;
+    padding: 10px;
+  }
+  .headerSocials {
+    display: block;
+    position: relative;
+    top: -47px;
+  }
+  .headerLogo {
+    margin-top: -70px;
+  }
+  .headerLogo img {
+    width: 200px;
+  }
+  .headerImage {
+    margin-top: -75px;
+    height: 345px;
+  }
+  .headerImage span.whiteArea {
+    height: 100px;
+    top: 245px;
+  }
+  .headerImage span.whiteArea img {
+    width: 75px;
+    margin: 15px 0 0 20px;
+  }
+  .headerImage span.whiteArea img:nth-child(1) {
+    margin-left: 100px;
+  }
+  .services, .contracts, .training {
+    margin-top: 50px;
+  }
+  .capabilities {
+    margin-top: -300px;
+  }
+  .capabilities h1 {
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
+  .capabilitiesContentLink h2 {
+    font-size: 14px;
+  }
+  .frogMan {
+    bottom: 45px;
+    max-height: 300px;
+  }
+  .our-clients {
+    margin-top: -300px;
+  }
+  .our-clients h1 {
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
+  .clientArea img {
+    width: 92px;
+  }
+  .climbing-wall {
+    bottom: 45px;
+    max-height: 367px;
+  }
+  .solid-foundation {
+    background-position-x: 0px;
+  }
+  .solidFoundationContentArea {
+    top: 50px;
+    padding: 0 50px;
+  }
+  .solidFoundationContentArea h1 {
+    font-size: 50px;
+  }
+  .solidFoundationContentArea p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .solidFoundationContentArea a.btn-main {
+    margin-top: 60px;
+  }
+  .solidFoundationContentArea a.left-side {
+    margin-left: 250px;
+  }
+  .whiteBand {
+    bottom: 0px;
+  }
+  .whiteBand h2 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) ==================================================================================================*/
+@media (min-width: 992px) {
+  .headerImage {
+    height: 410px;
+  }
+  .headerImage span.whiteArea {
+    top: 310px;
+  }
+  .services h2, .contracts h2, .training h2 {
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .services p, .contracts p, .training p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .services img, .contracts img, .training img {
+    margin: 40px 0 0 15px;
+  }
+  .capabilitiesContentLink h2 {
+    font-size: 20px;
+  }
+  .capabilitiesContentLink p {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: .7;
+  }
+  .frogMan {
+    max-height: 388px;
+  }
+  .clientArea img {
+    width: 122px;
+  }
+  .climbing-wall {
+    max-height: 472px;
+  }
+  .solidFoundationContentArea {
+    padding: 0 100px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up)============================================================================================ */
+@media (min-width: 1200px) {
+  .masthead a.btn-main {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .headerImage {
+    height: 490px;
+  }
+  .headerImage span.whiteArea {
+    top: 380px;
+    height: 110px;
+  }
+  .headerImage span.whiteArea img:nth-child(1) {
+    margin-left: 160px;
+  }
+  .capabilities {
+    margin-top: -360px;
+  }
+  .frogMan {
+    max-height: 480px;
+  }
+  .our-clients {
+    margin-top: -385px;
+  }
+  .climbing-wall {
+    max-height: 571px;
+  }
+}
+
+/* Large devices (large desktops, 1600px and up)============================================================================================ */
+@media (min-width: 1600px) {
+  .capabilities {
+    margin-top: -426px;
+  }
+  .frogMan {
+    max-height: 620px;
+  }
+  .our-clients {
+    margin-top: -435px;
+  }
+  .climbing-wall {
+    max-height: 755px;
+  }
+  .solid-foundation {
+    background-position-y: -270px;
+  }
+}
+
+/***********
+theme styles
+here you can directley add styles or import additional sass files
+feel free to use @extend to apply bootstrap classes and bootstrap variables
+************/
