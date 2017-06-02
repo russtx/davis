@@ -1,1 +1,149 @@
 /*================Footer =============*/
+footer{
+  width:100%;
+  height: 230px;
+  position: absolute;
+  bottom:0px;
+  h2{
+    text-align: center;
+    margin:0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  a{
+    color: #fff;
+  }
+  .blueFooter{
+    width: 100%;
+    background-color: $blue;
+    color: #fff;
+    height:100px;
+  }
+  .footerForm{
+    .leftPart{
+      .form-control{
+        float:right;
+      }
+    }
+    .form-group{
+      margin-bottom: -14px;
+      margin-top:-20px;
+    }
+    .form-control{
+      height:24px;
+      border-radius: 12px;
+      border-color: #fff;
+      color:#fff;
+      font-weight: 700;
+      background-color: $blue;
+      width: 90px;
+    }
+    input.wpcf7-form-control.wpcf7-submit{
+      height:16px;
+      border-radius: 8px;
+      border-color: #fff;
+      color:#fff;
+      font-weight: 500;
+      background-color: $blue;
+      width: 40px;
+      position: relative;
+      top:-11px;
+      margin-left: 40px;
+      font-size: 14px;
+      //float: right;
+      line-height: 3px;
+    }
+    a{
+      display: inline-block;
+      position: relative;
+      top: 9px;
+      text-decoration: none;
+      margin-left:95px;
+      &:hover{
+        color:#fff;
+        font-weight: 700;
+      }
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+      color: #fff !important;
+      font-weight: 700;
+      opacity: 1;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #fff !important;
+      font-weight: 700;
+      opacity: 1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #fff !important;
+      font-weight: 700;
+      opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: #fff !important;
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
+  .whiteFooter{
+
+    height: 36px;
+    background-color: #fff;
+    .footerLogo{
+      a{
+
+        img{
+          display: block;
+          margin: 0 auto;
+          width:40px;
+        }
+      }
+    }
+    .footerMenu{
+      ul.menu{
+        list-style: none;
+        width:200px;
+        li{
+          float: left;
+          margin:0 4px 0 0;
+          &:nth-child(1){
+            margin-left: -24px;
+          }
+          a{
+            color:$blue;
+            text-decoration: none;
+            &:hover{
+              color:$red;
+            }
+          }
+
+        }
+      }
+    }
+    .footerSocials{
+      .twitter{
+        background: url(./images/twitter-sprite.png) no-repeat;
+        background-position-y: -27px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 5px 0 0 22px;
+        float:left;
+        &:hover{
+          background-position-y: 0px;
+        }
+      }
+      .facebook{
+        background: url(./images/facebook-sprite.png) no-repeat;
+        background-position-y: -27px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 5px 0 0 0px;
+        float:left;
+        &:hover{
+          background-position-y: 0px;
+        }
+      }
+    }
+  }
+}

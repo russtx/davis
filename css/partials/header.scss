@@ -23,7 +23,7 @@
     background-color: $blue;
     border-color: $blue;
     &:hover{
-      background-color: $blue-trans ;
+      background-color: $light-blue ;
     }
     .icon-bar{
       background-color: #fff;
@@ -31,7 +31,7 @@
     }
   }
   .navbar-nav{
-    background-color: $blue-trans;
+    background-color: $blue;
     li{
       a{
         color: #fff;

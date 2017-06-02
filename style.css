@@ -163,7 +163,7 @@ body {
 }
 
 .navbar-default .navbar-toggle:hover {
-  background-color: rgba(18, 61, 97, 0.5);
+  background-color: #a1bbd1;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -171,7 +171,7 @@ body {
 }
 
 .navbar-default .navbar-nav {
-  background-color: rgba(18, 61, 97, 0.5);
+  background-color: #123d61;
 }
 
 .navbar-default .navbar-nav li a {
@@ -541,7 +541,6 @@ body {
   display: block;
   background: url(./images/overlay-background.png) no-repeat;
   background-size: cover;
-  display: block;
   width: 100%;
   height: 150px;
 }
@@ -571,7 +570,273 @@ body {
   height: 60px;
 }
 
+.clearfix {
+  clear: both;
+}
+
+.contact-us {
+  min-height: 560px;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.contactTitle h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 0px 0 0px 0px;
+}
+
+.contactInfo h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: left;
+  color: #822222;
+  padding: 0px 0 0 0;
+  margin: 3px 0 3px 0px;
+}
+
+.contactInfo p {
+  text-align: left;
+  font-size: 16px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #123d61;
+}
+
+.contactForm .form-control {
+  height: 24px;
+  border-radius: 12px;
+  border-color: #822222;
+  color: #822222;
+}
+
+.contactForm .form-group {
+  margin-bottom: -14px;
+}
+
+.contactForm .form-group:nth-child(1) {
+  margin-top: -16px;
+}
+
+.contactForm textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  border-color: #822222;
+  color: #822222;
+}
+
+.contactForm ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #822222 !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contactForm :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #822222 !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contactForm ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #822222 !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contactForm :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #822222 !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.contactForm input[type=submit] {
+  margin-top: 15px;
+  border-color: #123d61;
+  color: #123d61;
+  border-radius: 6px;
+  float: right;
+  background-color: #fff;
+  width: 50px;
+}
+
+.contactForm input.wpcf7-form-control.wpcf7-submit {
+  color: #123d61;
+  font-weight: 700;
+}
+
 /*================Footer =============*/
+footer {
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer h2 {
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .blueFooter {
+  width: 100%;
+  background-color: #123d61;
+  color: #fff;
+  height: 100px;
+}
+
+footer .footerForm .leftPart .form-control {
+  float: right;
+}
+
+footer .footerForm .form-group {
+  margin-bottom: -14px;
+  margin-top: -20px;
+}
+
+footer .footerForm .form-control {
+  height: 24px;
+  border-radius: 12px;
+  border-color: #fff;
+  color: #fff;
+  font-weight: 700;
+  background-color: #123d61;
+  width: 90px;
+}
+
+footer .footerForm input.wpcf7-form-control.wpcf7-submit {
+  height: 16px;
+  border-radius: 8px;
+  border-color: #fff;
+  color: #fff;
+  font-weight: 500;
+  background-color: #123d61;
+  width: 40px;
+  position: relative;
+  top: -11px;
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 3px;
+}
+
+footer .footerForm a {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  text-decoration: none;
+  margin-left: 95px;
+}
+
+footer .footerForm a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer .footerForm ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+footer .footerForm :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+footer .footerForm ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+footer .footerForm :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+footer .whiteFooter {
+  height: 36px;
+  background-color: #fff;
+}
+
+footer .whiteFooter .footerLogo a img {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+}
+
+footer .whiteFooter .footerMenu ul.menu {
+  list-style: none;
+  width: 200px;
+}
+
+footer .whiteFooter .footerMenu ul.menu li {
+  float: left;
+  margin: 0 4px 0 0;
+}
+
+footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
+  margin-left: -24px;
+}
+
+footer .whiteFooter .footerMenu ul.menu li a {
+  color: #123d61;
+  text-decoration: none;
+}
+
+footer .whiteFooter .footerMenu ul.menu li a:hover {
+  color: #822222;
+}
+
+footer .whiteFooter .footerSocials .twitter {
+  background: url(./images/twitter-sprite.png) no-repeat;
+  background-position-y: -27px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 0 22px;
+  float: left;
+}
+
+footer .whiteFooter .footerSocials .twitter:hover {
+  background-position-y: 0px;
+}
+
+footer .whiteFooter .footerSocials .facebook {
+  background: url(./images/facebook-sprite.png) no-repeat;
+  background-position-y: -27px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 0 0px;
+  float: left;
+}
+
+footer .whiteFooter .footerSocials .facebook:hover {
+  background-position-y: 0px;
+}
+
 /* responsive settings */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Sass Bootstrap */
@@ -679,6 +944,84 @@ body {
     font-size: 50px;
     font-weight: 900;
   }
+  .stay-updated {
+    max-height: 598px;
+    height: 100%;
+  }
+  .stay-updated a.left-side {
+    margin-top: 145px;
+    margin-left: 130px;
+  }
+  .stay-updated a.right-side {
+    margin-top: 145px;
+  }
+  .blogArea h1 {
+    font-size: 50px;
+    margin: 6px 0 30px 0;
+  }
+  .redBox {
+    height: 70px;
+  }
+  .redBox h3 {
+    font-size: 35px;
+  }
+  .blueBox {
+    height: 150px;
+    padding: 10px 20px;
+  }
+  .blueBox h2 {
+    font-size: 30px;
+  }
+  .blueBox span p {
+    font-size: 20px;
+  }
+  .blueBox p {
+    font-size: 24px;
+    line-height: .6;
+  }
+  .whiteBand-2 h2 {
+    font-size: 40px;
+  }
+  .background {
+    background-size: contain;
+    background-position-x: 285px;
+  }
+  .contactBackground {
+    width: 100%;
+    height: 500px;
+    background: url(./images/contact-background.png) no-repeat;
+    background-position-y: 85px;
+    background-size: contain;
+  }
+  .contact-us {
+    min-height: 243px;
+    height: initial;
+  }
+  .contact-us h1 {
+    font-size: 50px;
+  }
+  .contactForm textarea {
+    height: 140px;
+  }
+  footer {
+    height: 188px;
+  }
+  footer .whiteFooter .footerLogo a img {
+    width: 60px;
+  }
+  footer .whiteFooter .footerMenu ul.menu {
+    width: 450px;
+  }
+  footer .whiteFooter .footerMenu ul.menu li {
+    margin: 0 30px 0 0;
+  }
+  footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
+    margin-left: 40px;
+  }
+  footer .whiteFooter .footerMenu ul.menu li a {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
@@ -720,6 +1063,18 @@ body {
   .solidFoundationContentArea {
     padding: 0 100px;
   }
+  .background {
+    background-position-x: 493px;
+  }
+  footer .footerForm a {
+    margin-left: 160px;
+  }
+  footer .whiteFooter .footerMenu ul.menu {
+    width: 600px;
+  }
+  footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
+    margin-left: 125px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
@@ -750,6 +1105,15 @@ body {
   .climbing-wall {
     max-height: 571px;
   }
+  .background {
+    background-position-x: 893px;
+  }
+  footer .footerForm a {
+    margin-left: 235px;
+  }
+  footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
+    margin-left: 196px;
+  }
 }
 
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
@@ -759,6 +1123,7 @@ body {
   }
   .frogMan {
     max-height: 620px;
+    background-position-y: 85px;
   }
   .our-clients {
     margin-top: -435px;
@@ -768,6 +1133,9 @@ body {
   }
   .solid-foundation {
     background-position-y: -270px;
+  }
+  .background {
+    background-position-x: 1218px;
   }
 }
 
