@@ -187,6 +187,16 @@ $screen-sm-min: 768px;
       height:140px;
     }
   }
+  .businessAnalytics{
+    h1{
+      padding: 15px 0;
+      font-size: 50px;
+    }
+    p{
+    font-size: 22px;
+    line-height: .8;
+    }
+  }
   footer{
     height:188px;
     .footerForm{
@@ -360,5 +370,8 @@ $screen-sm-min: 768px;
   }
   .background {
     background-position-x: 1218px;
+  }
+  .businessAnalytics{
+    background-position-y: -161px;
   }
 }

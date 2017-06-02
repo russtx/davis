@@ -246,4 +246,4 @@
 		</div><!-- contactBackground -->
 		<?php get_footer(); ?>
 	</div>
-</div><!-- fulpage -->
+</div><!-- fullpage -->
