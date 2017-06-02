@@ -197,6 +197,28 @@ $screen-sm-min: 768px;
     line-height: .8;
     }
   }
+  .logistics{
+    margin-top: 20px;
+    background-position-x: 365px;
+    background-position-y: 180px;
+    h1{
+      font-size: 50px;
+      padding-bottom: 40px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 22px;
+      line-height: 1;
+    }
+    span p{
+      margin-top:15px;
+    }
+  }
+  .logisticsContent{
+    min-height: 295px;
+  }
   footer{
     height:188px;
     .footerForm{

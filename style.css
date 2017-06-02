@@ -756,6 +756,40 @@ body {
   min-height: 230px;
 }
 
+.engineering {
+  display: block;
+  background: url(./images/engineering-background.png) no-repeat;
+  background-size: cover;
+  background-position-x: -250px;
+  width: 100%;
+  height: 100%;
+}
+
+.engineering h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 0 0 0 0;
+  margin: 0px 0 0px 0px;
+}
+
+.engineering p {
+  text-align: center;
+  font-size: 18px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 5px 0px 0 0px;
+  color: #123d61;
+}
+
+.engineering span p {
+  margin-top: 20px;
+  padding-left: +10px;
+  line-height: 1.1;
+}
+
 /*================Footer =============*/
 footer {
   width: 100%;
@@ -1091,6 +1125,28 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .businessAnalytics p {
     font-size: 22px;
     line-height: .8;
+  }
+  .logistics {
+    margin-top: 20px;
+    background-position-x: 365px;
+    background-position-y: 180px;
+  }
+  .logistics h1 {
+    font-size: 50px;
+    padding-bottom: 40px;
+  }
+  .logistics h2 {
+    font-size: 30px;
+  }
+  .logistics p {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .logistics span p {
+    margin-top: 15px;
+  }
+  .logisticsContent {
+    min-height: 295px;
   }
   footer {
     height: 188px;
