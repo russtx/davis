@@ -107,27 +107,50 @@
 	<div class="section" id="section4">
 		<div class="cyber">
 			<h1>Cyber</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+						<h2>PROGRAM OFFICE SUPPORT</h2>
+						<?php the_field('program_office_support_content'); ?>
+						<span><?php the_field('program_office_support_list'); ?></span>
+						<h2>POST DEPLOYMENT SYSTEMS SUPPORT</h2>
+						<?php the_field('post_deployment_systems_support_content'); ?>
+						<span><?php the_field('post_deployment_systems_support_list'); ?></span>
+					</div>
+				</div><!-- row -->
+			</div><!-- container -->
 		</div><!-- cyber -->
 	</div><!-- section4 -->
 	<div class="section" id="section5">
-		<div class="intro">
-			<h1>Enjoy it</h1>
-		</div>
-
-	</div>
+		<div class="Education">
+			<h1>EDUCATION</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+						<?php the_field('education_content'); ?>
+						<span><?php the_field('education_list'); ?></span>
+					</div>
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- education -->
+	</div><!-- section5 -->
 	<div class="section" id="section6">
-		<div class="intro">
-			<h1>Enjoy it</h1>
-		</div>
-
-	</div>
+		<div class="research">
+			<h1>RESEARCH AND DEVELOPEMENT</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+						<?php the_field('research_and_development_content'); ?>
+						<span><?php the_field('research_and_development_list'); ?></span>
+						<h2>IT ADMINISTRATION</h2>
+						<?php the_field('it_administration_content'); ?>
+						<span><?php the_field('it_administration_list'); ?></span>
+					</div>
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- research -->
+	</div><!-- section6 -->
 	<div class="section" id="section7">
-		<div class="intro">
-			<h1>Enjoy it</h1>
-		</div>
-
-	</div>
-	<div class="section" id="section8">
 		<div class="contactBackground">
 			<div class="contact-us">
 				<div class="container">
@@ -158,5 +181,5 @@
 			</div><!-- contact-us -->
 		</div><!-- contactBackground -->
 		<?php get_footer(); ?>
-	</div>
+	</div><!-- section7 -->
 </div><!--full-page -->
