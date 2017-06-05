@@ -365,97 +365,52 @@ function custom_style() {
 
 // END THEME OPTIONS
 
-
 /**
  * Load site scripts.
  */
 function bootstrap_theme_enqueue_scripts() {
 	$template_url = get_template_directory_uri();
-
 	add_action('wp_enqueue_scripts', 'jquery_cdn');
-
 function jquery_cdn(){
-
   if(!is_admin()){
-
     wp_deregister_script('jquery');
-
-    wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', false, null, true);
-
+    wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', false, null, true);
     wp_enqueue_script('jquery');
-
   }
-
 }
-
 	wp_register_script(
-
 	'bootstrap-script',
-
 	'//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
-
 	array('jquery'),
-
 	'',
-
 	true
-
-);
-
-wp_register_script(
-
-'jquery-ui.min.js',
-
-'http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js',
-
-array('jquery'),
-
-'',
-
-true
-
-);
-
-
-  wp_register_script(
-    'google-maps',
-    '//maps.googleapis.com/maps/api/js?key=AIzaSyCFTzESYhJl9b73O7vP32FP7J1c5Uf3jL4',
-    array('jquery'),
-    '',
-    false
-  );
-
+	);
+	//wp_register_script(
+	    //'google-maps',
+	    //'//maps.googleapis.com/maps/api/js?key=AIzaSyCFTzESYhJl9b73O7vP32FP7J1c5Uf3jL4',
+	    //array('jquery'),
+	    //'',
+	    //false
+	//);
+	//wp_enqueue_script('google-maps');
  	wp_enqueue_script('bootstrap-script');
-
-	wp_enqueue_script('jquery-ui.min.js');
-
-	wp_register_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-
-  wp_enqueue_style('bootstrap-css');
-
-	wp_enqueue_script('google-maps');
-
+	//wp_enqueue_script('jquery-ui.min.js');
+	wp_enqueue_script( 'jquery.fullPage.js', $template_url . '/js/jquery.fullPage.min.js', array( 'jquery' ), null, true );
+	wp_enqueue_script( 'wow.min.js', $template_url . '/js/wow.min.js', array( 'jquery' ), null, true );
+	//wp_enqueue_script( 'scrolloverflow.min.js', $template_url . '/js/vendors/scrolloverflow.min.js', array( 'jquery' ), null, true );
+	//wp_enqueue_script( 'lightbox', $template_url . '/js/lightbox.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'script', $template_url . '/js/script.js', array( 'jquery' ), null, true );
 
-	wp_enqueue_script( 'jquery.fullPage.js', $template_url . '/js/jquery.fullPage.js', array( 'jquery' ), null, true );
-
-	//wp_enqueue_script( 'examples.js', $template_url . '/js/examples.js', array( 'jquery' ), null, true );
-
-	wp_enqueue_script( 'scrolloverflow.min.js', $template_url . '/js/vendors/scrolloverflow.min.js', array( 'jquery' ), null, true );
-
-	//wp_enqueue_script( 'lightbox', $template_url . '/js/lightbox.min.js', array( 'jquery' ), '', true );
-
 	//Main Style
+	wp_register_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+  wp_enqueue_style('bootstrap-css');
   //wp_enqueue_style( 'main-style', $template_url . 'style.css' );
 	wp_enqueue_style( 'main-style', get_stylesheet_uri() );
-
 	//wp_enqueue_style( 'animate.min.css', $template_url . 'style.css' );
 	wp_enqueue_style( 'animate.min.css', $template_url . '/css/animate.min.css');
-
 	//wp_enqueue_style( 'jquery.fullPage.css', $template_url . 'style.css' );
 	wp_enqueue_style( 'jquery.fullPage.css', $template_url . '/css/jquery.fullPage.css');
 
-	//wp_enqueue_style( 'examples.css', $template_url . '/css/examples.css');
 
 
 	// Load Thread comments WordPress script.

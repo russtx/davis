@@ -3,7 +3,7 @@ footer{
   width:100%;
   height: 230px;
   position: absolute;
-  bottom:0px;
+  bottom:24px;
   h2{
     text-align: center;
     margin:0 0 0 0;
@@ -13,6 +13,8 @@ footer{
     color: #fff;
   }
   .blueFooter{
+    //position: relative;
+    //bottom: 0px;
     width: 100%;
     background-color: $blue;
     color: #fff;
@@ -52,16 +54,19 @@ footer{
       //float: right;
       line-height: 3px;
     }
-    a{
+    span.forgot{
+      text-align: right;
+      width: 100px;
       display: inline-block;
-      position: relative;
-      top: 9px;
-      text-decoration: none;
-      margin-left:95px;
-      &:hover{
+      a{
+        text-decoration: none;
         color:#fff;
-        font-weight: 700;
+        &:hover{
+          color:#fff;
+          font-weight: 700;
+        }
       }
+
     }
     ::-webkit-input-placeholder { /* WebKit browsers */
       color: #fff !important;
@@ -85,15 +90,17 @@ footer{
     }
   }
   .whiteFooter{
-
-    height: 36px;
+    width:100%;
+    //position: relative;
+    //bottom: 0;
+    height: 33px;
     background-color: #fff;
     .footerLogo{
       a{
 
         img{
           display: block;
-          margin: 0 auto;
+          margin: 2px auto 0 auto;
           width:40px;
         }
       }
@@ -102,6 +109,7 @@ footer{
       ul.menu{
         list-style: none;
         width:200px;
+        margin:5px 0 0 -15px;
         li{
           float: left;
           margin:0 4px 0 0;
@@ -126,7 +134,7 @@ footer{
         display: inline-block;
         width: 30px;
         height: 30px;
-        margin: 5px 0 0 22px;
+        margin: 0px 0 0 42px;
         float:left;
         &:hover{
           background-position-y: 0px;
@@ -138,7 +146,7 @@ footer{
         display: inline-block;
         width: 30px;
         height: 30px;
-        margin: 5px 0 0 0px;
+        margin: 0px 0 0 0px;
         float:left;
         &:hover{
           background-position-y: 0px;

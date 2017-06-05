@@ -16,10 +16,10 @@
         <div class="col-xs-2 col-sm-2 footerLogo">
           <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="Footer Logo" /></a>
         </div>
-        <div class="col-xs-6 col-sm-8 footerMenu">
+        <div class="col-xs-5 col-sm-8 footerMenu">
             <?php wp_nav_menu(); ?>
         </div>
-        <div class="col-xs-4 col-sm-2 footerSocials">
+        <div class="col-xs-5 col-sm-2 footerSocials">
           <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
           <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
         </div>

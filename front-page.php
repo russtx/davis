@@ -1,17 +1,20 @@
 <?php get_header(); ?>
 
+
+
+
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="header">
 
-				<div class="headerLogo">
-		      <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Header Logo" /></a>
+				<div class="headerLogo wow slideInLeft">
+		      <a href="<?php echo home_url(); ?>"><img  src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Header Logo" /></a>
 		    </div>
 				<div class=" headerImage">
-					<span class="whiteArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/inc-500.png" alt="Services Logo" />
-						<img src="<?php echo get_template_directory_uri(); ?>/images/fast-50.png" alt="Services Logo" />
-						<img src="<?php echo get_template_directory_uri(); ?>/images/star-award.png" alt="Services Logo" />
+					<span class="whiteArea  ">
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/inc-500.png" alt="Services Logo" />
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/fast-50.png" alt="Services Logo" />
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/star-award.png" alt="Services Logo" />
 					</span>
 				</div>
 					<div class="container">
@@ -53,49 +56,49 @@
 			</div><!-- container -->
 		</div><!-- header -->
 	</div><!-- section -->
-	<div class="section " id="section1">
+	<div class="section second " id="section1">
 		<div class="capabilities">
 			<h1>CAPABILITIES</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
 							<h2>BUSINESS ANALYTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('business_analytics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
-							<h2>lOGISTICS</h2>
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
+							<h2>LOGISTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('logistics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
 							<h2>ENGINEERING</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('engineering', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
 							<h2>CYBER</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('cyber', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
 							<h2>EDUCATION</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('education', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/#/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
 							<h2>RESEARCH &#38; DEVELOPMENT</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('research_&_development', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
@@ -104,76 +107,78 @@
 			</div><!-- container -->
 
 		</div><!-- capabilities -->
-		<div class="frogMan"></div>
+		<div class="frogMan wow slideInUp"></div>
 	</div>
-	<div class="section " id="section2">
+	<div class="section third " id="section2">
 		<div class="our-clients">
 			<h1>OUR CLIENTS</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/national-guard.png" alt="National Guard" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/national-guard.png" alt="National Guard" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/army.png" alt="Army" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/army.png" alt="Army" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/homeland-security.png" alt="Homeland Security" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/homeland-security.png" alt="Homeland Security" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/marines.png" alt="Marine Corps" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/marines.png" alt="Marine Corps" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/navy.png" alt="Navy" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/navy.png" alt="Navy" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/air-force" alt="Air Force" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/air-force" alt="Air Force" />
 					</div>
 				</div><!-- row -->
 			</div><!-- container -->
 			<div class="climbing-wall"></div>
 		</div><!-- our-clients -->
 	</div>
-	<div class="section " id="section3">
-		<div class="solid-foundation">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-9 col-xs-offset-3 solidFoundationContentArea">
-							<h1>A SOLID FOUNDATION</h1>
-							<?php the_field('solid_foundation_content'); ?>
-							<a href="#" class="btn-main left-side">INFORMATION</a>
-							<a href="#" class="btn-main right-side">OFFICERS</a>
-					</div>
-				</div><!-- row -->
-			</div><!-- container -->
-			<div class="whiteBand">
+	<div class="section forth " id="section3">
+		<div class="solid-foundation ">
+			<div class="mountain wow slideInLeft">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-6 whiteBandContent">
-							<h2>
-								TEAMS &amp;<br />
-								BUSINESS OPPS
-							</h2>
-							<a href="#" class="btn-main left-side">LEARN MORE</a>
-						</div>
-						<div class="col-xs-6 whiteBandContent">
-							<h2>
-								CONTRACT<br />
-								VEHICLES
-							</h2>
-							<a href="#" class="btn-main right-side">LEARN MORE</a>
+						<div class="col-xs-9 col-xs-offset-3 solidFoundationContentArea">
+								<h1>A SOLID FOUNDATION</h1>
+								<?php the_field('solid_foundation_content'); ?>
+								<a href="#" class="btn-main left-side">INFORMATION</a>
+								<a href="#" class="btn-main right-side">OFFICERS</a>
 						</div>
 					</div><!-- row -->
 				</div><!-- container -->
-			</div>
+				<div class="whiteBand wow slideInUp">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 whiteBandContent  ">
+								<h2>
+									TEAMS &amp;<br />
+									BUSINESS OPPS
+								</h2>
+								<a href="#" class="btn-main left-side ">LEARN MORE</a>
+							</div>
+							<div class="col-xs-6 whiteBandContent ">
+								<h2>
+									CONTRACT<br />
+									VEHICLES
+								</h2>
+								<a href="#" class="btn-main right-side">LEARN MORE</a>
+							</div>
+						</div><!-- row -->
+					</div><!-- container -->
+				</div>
+			</div><!-- mountain -->
 		</div><!-- solid-foundation -->
 	</div>
-	<div class="section" id="section4">
+	<div class="section fifth" id="section4">
 		<div class="stay-updated">
 			<div class="background">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-8 blogArea">
+						<div class="col-xs-12 col-sm-8 blogArea wow slideInLeft ">
 							<h1>STAY UPDATED</h1>
 							<?php
 
@@ -203,10 +208,10 @@
 				<h2>FOLLOW US ON SOCIAL MEDIA</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="twitter"></div>
+						<div class="twitter wow bounce"></div>
 					</div>
 					<div class="col-xs-6">
-						<div class="facebook"></div>
+						<div class="facebook wow bounce"></div>
 					</div>
 				</div><!-- row -->
 			</div><!-- whiteBand-2 -->
@@ -214,7 +219,7 @@
 	</div>
 
 
-	<div class="section" id="section5">
+	<div class="section sixth" id="section5">
 		<div class="contactBackground">
 			<div class="contact-us">
 				<div class="container">
@@ -237,7 +242,7 @@
 								<p>540 542 3079</p>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-4 contactForm">
+						<div class="col-xs-12 col-sm-4 contactForm wow slideInUp ">
 							<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 						</div>
 					</div><!--row -->

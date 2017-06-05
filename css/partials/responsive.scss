@@ -91,6 +91,9 @@ $screen-sm-min: 768px;
     max-height: 367px;
   }
   .solid-foundation{
+    bottom: 45px;
+  }
+  .mountain{
     background-position-x: 0px;
   }
   .solidFoundationContentArea{
@@ -138,6 +141,7 @@ $screen-sm-min: 768px;
   }
   .redBox{
     height:70px;
+    width:60px;
     h3{
       font-size: 35px;
     }
@@ -250,6 +254,7 @@ $screen-sm-min: 768px;
             width: 60px;
           }
         }
+
       }
       .footerMenu{
         ul.menu{
@@ -264,6 +269,14 @@ $screen-sm-min: 768px;
               font-weight: 600;
             }
           }
+        }
+      }
+      .footerSocials{
+        .twitter{
+          margin: 5px 0 0 10px;
+        }
+        .facebook{
+          margin:4px 0 0 5px;
         }
       }
     }
@@ -413,7 +426,7 @@ $screen-sm-min: 768px;
   .climbing-wall{
     max-height: 755px;
   }
-  .solid-foundation{
+  .mountain{
     background-position-y: -270px;
   }
   .background {

@@ -135,7 +135,9 @@ body {
 .masthead {
   background: #fff;
   z-index: 9999;
-  position: relative;
+  position: fixed;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
   height: 95px;
 }
 
@@ -228,13 +230,17 @@ body {
 }
 
 /*======================================= Main Css =================================================*/
+.main-container {
+  overflow: auto;
+}
+
 .header {
   display: block;
   width: 100%;
 }
 
 .headerLogo {
-  margin-top: -100px;
+  margin-top: 100px;
 }
 
 .headerLogo img {
@@ -247,7 +253,7 @@ body {
   height: 130px;
   background: url(./images/home-header-image.png) no-repeat;
   background-size: cover;
-  margin-top: -42px;
+  margin-top: -50px;
 }
 
 .headerImage span.whiteArea {
@@ -293,7 +299,7 @@ body {
 }
 
 .capabilities {
-  margin-top: -235px;
+  margin-top: -35px;
 }
 
 .capabilities h1 {
@@ -343,7 +349,7 @@ body {
   height: 100%;
   background: url(./images/frogman.png) no-repeat;
   background-size: cover;
-  bottom: 95px;
+  bottom: 0px;
   position: absolute;
   width: 100%;
 }
@@ -383,10 +389,19 @@ body {
 
 .solid-foundation {
   display: block;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mountain {
+  display: block;
   background: url(./images/solid-foundation.png) no-repeat;
   background-size: cover;
   background-position-x: -32px;
-  bottom: 0px;
+  background-position-y: 100px;
+  bottom: 95px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -428,7 +443,7 @@ body {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 245px;
+  height: 135px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -439,15 +454,11 @@ body {
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 6px 0 6px 0;
+  margin: 30px 0 6px 0;
 }
 
 .whiteBand a.btn-main {
   text-decoration: none;
-}
-
-.whiteBandContent {
-  margin-top: 20px;
 }
 
 .background {
@@ -809,7 +820,7 @@ footer {
   width: 100%;
   height: 230px;
   position: absolute;
-  bottom: 0px;
+  bottom: 24px;
 }
 
 footer h2 {
@@ -863,15 +874,18 @@ footer .footerForm input.wpcf7-form-control.wpcf7-submit {
   line-height: 3px;
 }
 
-footer .footerForm a {
+footer .footerForm span.forgot {
+  text-align: right;
+  width: 100px;
   display: inline-block;
-  position: relative;
-  top: 9px;
-  text-decoration: none;
-  margin-left: 95px;
 }
 
-footer .footerForm a:hover {
+footer .footerForm span.forgot a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footerForm span.forgot a:hover {
   color: #fff;
   font-weight: 700;
 }
@@ -905,19 +919,21 @@ footer .footerForm :-ms-input-placeholder {
 }
 
 footer .whiteFooter {
-  height: 36px;
+  width: 100%;
+  height: 33px;
   background-color: #fff;
 }
 
 footer .whiteFooter .footerLogo a img {
   display: block;
-  margin: 0 auto;
+  margin: 2px auto 0 auto;
   width: 40px;
 }
 
 footer .whiteFooter .footerMenu ul.menu {
   list-style: none;
   width: 200px;
+  margin: 5px 0 0 -15px;
 }
 
 footer .whiteFooter .footerMenu ul.menu li {
@@ -944,7 +960,7 @@ footer .whiteFooter .footerSocials .twitter {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 5px 0 0 22px;
+  margin: 0px 0 0 42px;
   float: left;
 }
 
@@ -958,7 +974,7 @@ footer .whiteFooter .footerSocials .facebook {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 5px 0 0 0px;
+  margin: 0px 0 0 0px;
   float: left;
 }
 
@@ -1046,6 +1062,9 @@ footer .whiteFooter .footerSocials .facebook:hover {
     max-height: 367px;
   }
   .solid-foundation {
+    bottom: 45px;
+  }
+  .mountain {
     background-position-x: 0px;
   }
   .solidFoundationContentArea {
@@ -1090,6 +1109,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
   }
   .redBox {
     height: 70px;
+    width: 60px;
   }
   .redBox h3 {
     font-size: 35px;
@@ -1195,6 +1215,12 @@ footer .whiteFooter .footerSocials .facebook:hover {
   footer .whiteFooter .footerMenu ul.menu li a {
     font-size: 20px;
     font-weight: 600;
+  }
+  footer .whiteFooter .footerSocials .twitter {
+    margin: 5px 0 0 10px;
+  }
+  footer .whiteFooter .footerSocials .facebook {
+    margin: 4px 0 0 5px;
   }
 }
 
@@ -1313,7 +1339,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .climbing-wall {
     max-height: 755px;
   }
-  .solid-foundation {
+  .mountain {
     background-position-y: -270px;
   }
   .background {

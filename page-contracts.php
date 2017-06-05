@@ -54,37 +54,75 @@
             <?php the_field('kratos_defense_&_security_url'); ?>
             <?php the_field('kratos_defense_&_security_content'); ?>
             <h3>L-3 SERVICES INC</h3>
-            <?php the_field('bae_systems_content'); ?>
+            <?php the_field('l-3_services_inc_url'); ?>
+            <?php the_field('l-3_services_inc_content'); ?>
             <h3>MCR FEDERAL</h3>
-            <?php the_field('bae_systems_content'); ?>
+            <?php the_field('mcr_federal_url'); ?>
+            <?php the_field('mcr_federal_content'); ?>
             <h3>ORSA CORPORATION</h3>
-            <?php the_field('bae_systems_content'); ?>
+            <?php the_field('orsa_corporation_url'); ?>
+            <?php the_field('orsa_corporation_content'); ?>
             <h3>SURVICE</h3>
-            <?php the_field('bae_systems_content'); ?>
+            <?php the_field('survice_url'); ?>
+            <?php the_field('survice_content'); ?>
             <h3>TEKSYS</h3>
-            <?php the_field('bae_systems_content'); ?>
-            <h3>THEAT DEFENSE</h3>
-            <?php the_field('bae_systems_content'); ?>
+            <?php the_field('teksys_url'); ?>
+            <?php the_field('teksys_content'); ?>
+            <h3>THREAT DEFENSE</h3>
+            <?php the_field('threat_defense_url'); ?>
+            <?php the_field('threat_defense_content'); ?>
           </div>
           <div class="col-xs-12 col-sm-6 right-groups">
             <h3>BOOZ ALLEN HAMILTON</h3>
+            <?php the_field('booz_allen_hamilton_url'); ?>
+            <?php the_field('booz_allen_hamilton_content'); ?>
             <h3>CAMBER</h3>
-            <h3>CENGILITY</h3>
-            <h3>HODGES TRANPORTATION INC.</h3>
+            <?php the_field('camber_url'); ?>
+            <?php the_field('camber_content'); ?>
+            <h3>ENGILITY</h3>
+            <?php the_field('engility_url'); ?>
+            <?php the_field('engility_content'); ?>
+            <h3>HODGES TRANSPORTATION INC.</h3>
+            <?php the_field('hodges_transportation_inc_url'); ?>
+            <?php the_field('hodges_transportation_inc_content'); ?>
             <h3>KNOWLEDGE CAPITAL ASSOCIATES (KCA)</h3>
+            <?php the_field('knowledge_capital_associates_url'); ?>
+            <?php the_field('knowledge_capital_associates_content'); ?>
             <h3>LOCKEED MARTIN</h3>
-            <h3>NEW BREED LOGISTIC</h3>
+            <?php the_field('lockeed_martin_url'); ?>
+            <?php the_field('lockeed_martin_content'); ?>
+            <h3>NEW BREED LOGISTICS</h3>
+            <?php the_field('new_breed_logistics_url'); ?>
+            <?php the_field('new_breed_logistics_content'); ?>
             <h3>SAYRES AND ASSOCIATES CORPORATION</h3>
+            <?php the_field('sayres_and_associates_corporation_url'); ?>
+            <?php the_field('sayres_and_associates_corporation_content'); ?>
             <h3>SHARPSHOOTER TRAINING, LLC</h3>
+            <?php the_field('sharpshooter_training_url'); ?>
+            <?php the_field('sharpshooter_training_content'); ?>
             <h3>SYSTEMS STUDIES &amp; SIMULATION CORPORATION</h3>
-            <h3>TRANSFOMATION SYSTEMS, INC.</h3>
+            <?php the_field('systems_studies_&_simulation_corporation_url'); ?>
+            <?php the_field('systems_studies_&_simulation_corporation_content'); ?>
+            <h3>TRANSFORMATION SYSTEMS, INC.</h3>
+            <?php the_field('transformation_systems_url'); ?>
+            <?php the_field('transformation_systems_content'); ?>
+            <a href="#" class="btn-main">VIEW CHART</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 support-services">
           <h2>SUPPORT SERVICES EXPERIENCE</h2>
+            <?php
+              if( have_rows('support_services_experience') ):
+                while ( have_rows('support_services_experience') ) : the_row();
+                the_sub_field('support_services_experience_support_type');
+              endwhile;
+              else :
+              endif;
+            ?>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 quality-assurance">
           <h2>QUALITY ASSURANCE PROGRAM</h2>
+          <?php the_field('quality_assurance_program_content'); ?>
         </div>
       </div><!-- row -->
     </div><!--container -->

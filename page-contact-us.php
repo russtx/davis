@@ -37,7 +37,7 @@
     DC AND THE MULTIPLE<br />
     GOVERNMENT AGENCIES AND<br />
     FORTUNE 500 COMPANIES IN THE <br />
-    NORTHERN VIRGINIA AREA.
+    NORTHERN VIRGINIA AREA
   </p>
 </div><!-- locateUs -->
 <div class="stay-updated">
