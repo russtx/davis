@@ -1,18 +1,18 @@
 <?php get_header(); ?>
-  <div class="contracts">
+  <div class="contractArea">
     <div class="container">
       <div class="row">
         <h1>CONTRACTS</h1>
         <div class="col-xs-12 col-sm-6">
           <h2>GENRAL SERVICES ADMINISTRATION SCHEDEULES</h2>
-          <?php the_field('general_services_administration_schedules_url'); ?>
-          <?php the_field('general_services_administration_schedules'); ?>
+          <a href="<?php the_field('general_services_administration_schedules_url'); ?>"><?php the_field('general_services_administration_schedules_url'); ?></a>
+          <p><?php the_field('general_services_administration_schedules'); ?></p>
           <?php the_field('general_services_administration_schedules_contract_number'); ?>
         </div>
         <div class="col-xs-12 col-sm-6">
           <h2>SEAPORT ENHANCED &#40;SEAPORT-E&#41;</h2>
-          <?php the_field('seaport_enhanced_information_url'); ?>
-          <?php the_field('seaport_enhanced_information_content'); ?>
+          <a href="<?php the_field('seaport_enhanced_information_url'); ?>"><?php the_field('seaport_enhanced_information_url'); ?></a>
+          <p><?php the_field('seaport_enhanced_information_content'); ?></p>
           <?php the_field('seaport_enhanced_information'); ?>
         </div>
         <div class="col-xs-12 col-sm-6">
@@ -25,100 +25,108 @@
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 awardedTask">
           <h2>AWARDED TASK ORDERS</h2>
-            <?php
-              if( have_rows('awarded_task_orders') ):
-                while ( have_rows('awarded_task_orders') ) : the_row();
-                the_sub_field('task_orders');
-              endwhile;
-              else :
-              endif;
-            ?>
+            <div class="awardColumns">
+              <ul>
+                <?php
+                  if( have_rows('awarded_task_orders') ):
+                    while ( have_rows('awarded_task_orders') ) : the_row(); ?>
+                    <li><?php the_sub_field('task_orders'); ?></li>
+                  <?php  endwhile;
+                else :
+                  endif;
+                ?>
+              </ul>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 awardedTask">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 teamMates">
           <h2>DAVIS DEFENSE GROUP AND ITS SEAPORT-E TEAMMATES</h2>
           <?php the_field('seaport-e_teammates_content'); ?>
           <div class="col-xs-12 col-sm-6 left-groups">
             <h3>BAE SYSTEMS</h3>
-            <?php the_field('bae_systems_url'); ?>
+            <a href="<?php the_field('bae_systems_url'); ?>"><?php the_field('bae_systems_url'); ?></a>
             <?php the_field('bae_systems_content'); ?>
             <h3>BATTELLE</h3>
-            <?php the_field('battele_url'); ?>
+            <a href="<?php the_field('battele_url'); ?>"><?php the_field('battele_url'); ?></a>
             <?php the_field('battelle_content'); ?>
             <h3>CACI</h3>
-            <?php the_field('caci_url'); ?>
+            <a href="<?php the_field('caci_url'); ?>"><?php the_field('caci_url'); ?></a>
             <?php the_field('caci_content'); ?>
             <h3>GENERAL DYNAMICS</h3>
-            <?php the_field('general_dynamics_url'); ?>
+            <a href="<?php the_field('general_dynamics_url'); ?>"><?php the_field('general_dynamics_url'); ?></a>
             <?php the_field('general_dynamics_content'); ?>
             <h3>KRATOS DEFENSE &amp; SECURITY</h3>
-            <?php the_field('kratos_defense_&_security_url'); ?>
+            <a href="<?php the_field('kratos_defense_&_security_url'); ?>"><?php the_field('kratos_defense_&_security_url'); ?></a>
             <?php the_field('kratos_defense_&_security_content'); ?>
             <h3>L-3 SERVICES INC</h3>
-            <?php the_field('l-3_services_inc_url'); ?>
+            <a href="<?php the_field('l-3_services_inc_url'); ?>"><?php the_field('l-3_services_inc_url'); ?></a>
             <?php the_field('l-3_services_inc_content'); ?>
             <h3>MCR FEDERAL</h3>
-            <?php the_field('mcr_federal_url'); ?>
+            <a href="<?php the_field('mcr_federal_url'); ?>"><?php the_field('mcr_federal_url'); ?></a>
             <?php the_field('mcr_federal_content'); ?>
             <h3>ORSA CORPORATION</h3>
-            <?php the_field('orsa_corporation_url'); ?>
+            <a href="<?php the_field('orsa_corporation_url'); ?>"><?php the_field('orsa_corporation_url'); ?></a>
             <?php the_field('orsa_corporation_content'); ?>
             <h3>SURVICE</h3>
-            <?php the_field('survice_url'); ?>
+            <a href="<?php the_field('survice_url'); ?>"><?php the_field('survice_url'); ?></a>
             <?php the_field('survice_content'); ?>
             <h3>TEKSYS</h3>
-            <?php the_field('teksys_url'); ?>
+            <a href="<?php the_field('teksys_url'); ?>"><?php the_field('teksys_url'); ?></a>
             <?php the_field('teksys_content'); ?>
             <h3>THREAT DEFENSE</h3>
-            <?php the_field('threat_defense_url'); ?>
+            <a href="<?php the_field('threat_defense_url'); ?>"><?php the_field('threat_defense_url'); ?></a>
             <?php the_field('threat_defense_content'); ?>
           </div>
           <div class="col-xs-12 col-sm-6 right-groups">
             <h3>BOOZ ALLEN HAMILTON</h3>
-            <?php the_field('booz_allen_hamilton_url'); ?>
+            <a href="<?php the_field('booz_allen_hamilton_url'); ?>"><?php the_field('booz_allen_hamilton_url'); ?></a>
             <?php the_field('booz_allen_hamilton_content'); ?>
             <h3>CAMBER</h3>
-            <?php the_field('camber_url'); ?>
+            <a href="<?php the_field('camber_url'); ?>"><?php the_field('camber_url'); ?></a>
             <?php the_field('camber_content'); ?>
             <h3>ENGILITY</h3>
-            <?php the_field('engility_url'); ?>
+            <a href="<?php the_field('engility_url'); ?>"><?php the_field('engility_url'); ?></a>
             <?php the_field('engility_content'); ?>
             <h3>HODGES TRANSPORTATION INC.</h3>
-            <?php the_field('hodges_transportation_inc_url'); ?>
+            <a href="<?php the_field('hodges_transportation_inc_url'); ?>"><?php the_field('hodges_transportation_inc_url'); ?></a>
             <?php the_field('hodges_transportation_inc_content'); ?>
             <h3>KNOWLEDGE CAPITAL ASSOCIATES (KCA)</h3>
-            <?php the_field('knowledge_capital_associates_url'); ?>
+            <a href="<?php the_field('knowledge_capital_associates_url'); ?>"><?php the_field('knowledge_capital_associates_url'); ?></a>
             <?php the_field('knowledge_capital_associates_content'); ?>
             <h3>LOCKEED MARTIN</h3>
-            <?php the_field('lockeed_martin_url'); ?>
+            <a href="<?php the_field('lockeed_martin_url'); ?>"><?php the_field('lockeed_martin_url'); ?></a>
             <?php the_field('lockeed_martin_content'); ?>
             <h3>NEW BREED LOGISTICS</h3>
-            <?php the_field('new_breed_logistics_url'); ?>
+            <a href="<?php the_field('new_breed_logistics_url'); ?>"><?php the_field('new_breed_logistics_url'); ?></a>
             <?php the_field('new_breed_logistics_content'); ?>
             <h3>SAYRES AND ASSOCIATES CORPORATION</h3>
-            <?php the_field('sayres_and_associates_corporation_url'); ?>
+            <a href="<?php the_field('sayres_and_associates_corporation_url'); ?>"><?php the_field('sayres_and_associates_corporation_url'); ?></a>
             <?php the_field('sayres_and_associates_corporation_content'); ?>
             <h3>SHARPSHOOTER TRAINING, LLC</h3>
-            <?php the_field('sharpshooter_training_url'); ?>
+            <a href="<?php the_field('sharpshooter_training_url'); ?>"><?php the_field('sharpshooter_training_url'); ?></a>
             <?php the_field('sharpshooter_training_content'); ?>
             <h3>SYSTEMS STUDIES &amp; SIMULATION CORPORATION</h3>
-            <?php the_field('systems_studies_&_simulation_corporation_url'); ?>
+            <a href="<?php the_field('systems_studies_&_simulation_corporation_url'); ?>"><?php the_field('systems_studies_&_simulation_corporation_url'); ?></a>
             <?php the_field('systems_studies_&_simulation_corporation_content'); ?>
             <h3>TRANSFORMATION SYSTEMS, INC.</h3>
-            <?php the_field('transformation_systems_url'); ?>
+            <a href="<?php the_field('transformation_systems_url'); ?>"><?php the_field('transformation_systems_url'); ?></a>
             <?php the_field('transformation_systems_content'); ?>
             <a href="#" class="btn-main">VIEW CHART</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 support-services">
           <h2>SUPPORT SERVICES EXPERIENCE</h2>
-            <?php
-              if( have_rows('support_services_experience') ):
-                while ( have_rows('support_services_experience') ) : the_row();
-                the_sub_field('support_services_experience_support_type');
-              endwhile;
-              else :
-              endif;
-            ?>
+          <div class="columns">
+            <ul>
+              <?php
+                if( have_rows('support_services_experience') ):
+                  while ( have_rows('support_services_experience') ) : the_row(); ?>
+                  <li><?php the_sub_field('support_services_experience_support_type'); ?></li>
+                <?php endwhile;
+                else :
+                endif;
+              ?>
+            </ul>
+          </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 quality-assurance">
           <h2>QUALITY ASSURANCE PROGRAM</h2>

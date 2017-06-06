@@ -3,14 +3,15 @@
 <div id="fullpage">
 <div class="section" id="section0">
   <div class="about">
-    <img src="<?php the_field('about_hero_image'); ?>" class="img-responsive" />
-    <h1>A SOLID FOUNDATION</h1>
+    <img src="<?php the_field('about_hero_image'); ?>" class="img-responsive wow zoomIn" />
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
           <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <h1 class="wow slideInLeft">A SOLID FOUNDATION</h1>
             <?php the_content(); ?>
           </div>
             <?php endwhile; ?>
@@ -27,21 +28,23 @@
 </div><!-- section0 -->
 <div class="section" id="section1">
   <div class="team">
-    <h1>MEET THE TEAM</h1>
+    <h1 class="wow slideInLeft">MEET THE TEAM</h1>
     <div class="container">
       <div class="row row-centered">
-        <?php
-            if( have_rows('meet_the_team') ):
-     	    while ( have_rows('meet_the_team') ) : the_row();?>
-          <div class="col-xs-12 col-sm-6 col-centered employeeInfo">
-            <img src="<?php the_sub_field('employee_image'); ?>" />
-            <?php the_sub_field('employee_name'); ?>
-            <?php the_sub_field('employee_title'); ?>
-          </div>
-          <?php endwhile;
-          else :
-          endif;
-        ?>
+        <div class="col-md-6  col-centered">
+          <?php
+              if( have_rows('meet_the_team') ):
+       	    while ( have_rows('meet_the_team') ) : the_row();?>
+            <div class="col-xs-6 col-centered employeeInfo">
+              <img class="wow flipInX" src="<?php the_sub_field('employee_image'); ?>" />
+              <h2 class="wow fadeIn" data-wow-delay="1s"><?php the_sub_field('employee_name'); ?></h2>
+              <h3><?php the_sub_field('employee_title'); ?></h3>
+            </div>
+            <?php endwhile;
+            else :
+            endif;
+          ?>
+        </div>
       </div><!-- row -->
     </div><!-- container -->
   </div><!-- team -->
@@ -69,7 +72,7 @@
               <p>540 542 3079</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 contactForm">
+          <div class="col-xs-12 col-sm-4 contactForm wow slideInUp">
             <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
           </div>
         </div><!--row -->

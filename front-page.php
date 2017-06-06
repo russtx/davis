@@ -178,7 +178,7 @@
 			<div class="background">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-8 blogArea wow slideInLeft ">
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 blogArea wow slideInLeft ">
 							<h1>STAY UPDATED</h1>
 							<?php
 
@@ -192,15 +192,17 @@
 								</h3>
 							</div>
 							<div class="col-xs-9 col-xs-offset-1 blueBox">
-								<h2><?php the_title(); ?></h2>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h2><?php the_title(); ?></h2></a>
 								<span><p><?php the_field('post_author'); ?></p></span>
 	              <?php my_excerpt('short'); ?>
 							</div>
         			<?php endwhile; endif; wp_reset_postdata(); ?>
 						</div>
 						<div class="clearfix"></div>
-						<a href="#" class="btn-main left-side">OUR BLOG</a>
-						<a href="#" class="btn-main right-side">SUBSCRIBE</a>
+						<div class="col-xs-9 col-xs-offset-1 col-sm-8 col-sm-offset-2 blogButtons">
+							<a href="#" class="btn-main left-side">OUR BLOG</a>
+							<a href="#" class="btn-main right-side">SUBSCRIBE</a>
+						</div>
 					</div><!-- row -->
 				</div><!-- container -->
 			</div><!-- background -->

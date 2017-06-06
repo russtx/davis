@@ -3,43 +3,52 @@
   <div class="contact-us">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4 contactTitle">
-          <h1>CONTACT US</h1>
-        </div>
-        <div class="col-xs-12 col-sm-4 contactInfo">
-          <div class="col-xs-6 col-sm-12">
-            <h3>ADDRESS</h3>
-            <p>
-              475 AQUIA TOWNE CENTER DRIVE<BR />
-              SUITE #401 STAFFORD, VA 22504
-            </p>
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-xs-12 col-sm-6 contactInfo">
+            <div class="col-xs-6 col-sm-12">
+              <h3>ADDRESS</h3>
+              <p>
+                475 AQUIA TOWNE CENTER DRIVE<BR />
+                SUITE #401 STAFFORD, VA 22504
+              </p>
+            </div>
+            <div class="col-xs-6 col-sm-12">
+              <h3>PHONE</h3>
+              <p>540. 548. 5980</p>
+              <h3>FAX</h3>
+              <p>540 542 3079</p>
+            </div>
           </div>
-          <div class="col-xs-6 col-sm-12">
-            <h3>PHONE</h3>
-            <p>540. 548. 5980</p>
-            <h3>FAX</h3>
-            <p>540 542 3079</p>
+          <div class="col-xs-12 col-sm-6 contactForm">
+            <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 contactForm">
-          <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
         </div>
       </div><!--row -->
     </div><!-- container -->
   </div><!-- contact-us -->
 </div><!-- contactBackground -->
-<div class="locateUs">
-  <h2>LOCATE US</h2>
-  <p>
-    SITUATED IN STATFORD, VIRGINIA<br />
-    DAVIS DEFENSE GROUP IS EASILY<br />
-    ACCESSIBLE FROM WASHINGTON<br />
-    DC AND THE MULTIPLE<br />
-    GOVERNMENT AGENCIES AND<br />
-    FORTUNE 500 COMPANIES IN THE <br />
-    NORTHERN VIRGINIA AREA
-  </p>
-</div><!-- locateUs -->
+<div class="mapContainer">
+  <div class="col-xs-12 col-sm-7 mapArea">
+    <?php $location = get_field('location', 'option');
+        if(!empty($location)): ?>
+          <div class="acf-map google-map">
+            <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+          </div>
+    <?php endif; ?>
+  </div>
+  <div class="col-sm-5 locateUs">
+    <h2>LOCATE US</h2>
+    <p>
+      SITUATED IN STATFORD, VIRGINIA<br />
+      DAVIS DEFENSE GROUP IS EASILY<br />
+      ACCESSIBLE FROM WASHINGTON<br />
+      DC AND THE MULTIPLE<br />
+      GOVERNMENT AGENCIES AND<br />
+      FORTUNE 500 COMPANIES IN THE <br />
+      NORTHERN VIRGINIA AREA
+    </p>
+  </div><!-- locateUs -->
+</div><!-- mapContainer -->
 <div class="stay-updated">
   <div class="background">
     <div class="container">

@@ -60,7 +60,7 @@ $screen-sm-min: 768px;
   .capabilities{
     margin-top:-300px;
     h1{
-      padding-bottom: 15px;
+      padding: 20px 0;
       font-size: 50px;
     }
   }
@@ -70,7 +70,7 @@ $screen-sm-min: 768px;
     }
   }
   .frogMan{
-    bottom: 45px;
+    bottom: 0px;
     max-height: 300px;
   }
   .our-clients{
@@ -87,17 +87,17 @@ $screen-sm-min: 768px;
     }
   }
   .climbing-wall{
-    bottom: 45px;
+    bottom: 0px;
     max-height: 367px;
   }
   .solid-foundation{
-    bottom: 45px;
+    bottom: 0px;
   }
   .mountain{
     background-position-x: 0px;
   }
   .solidFoundationContentArea{
-    top:50px;
+    top:70px;
     padding: 0 50px;
     h1{
       font-size: 50px;
@@ -116,6 +116,7 @@ $screen-sm-min: 768px;
     }
   }
   .whiteBand{
+    height:200px;
     bottom: 0px;
     h2{
       font-size: 50px;
@@ -125,12 +126,13 @@ $screen-sm-min: 768px;
   .stay-updated{
     max-height:598px;
     height:100%;
+    top:22px;
     a.left-side{
-      margin-top:145px;
-      margin-left:130px;
+      //margin-top:145px;
+      //margin-left:130px;
     }
     a.right-side{
-      margin-top:145px;
+      //margin-top:145px;
     }
   }
   .blogArea{
@@ -164,6 +166,8 @@ $screen-sm-min: 768px;
 
   }
   .whiteBand-2{
+    height:240px;
+    padding-top: 40px;
     h2{
       font-size: 40px;
     }
@@ -174,14 +178,14 @@ $screen-sm-min: 768px;
   }
   .contactBackground{
     width:100%;
-    height: 500px;
+    //height: 635px;
     background: url(./images/contact-background.png) no-repeat;
-    background-position-y: 85px;
+    background-position-y: 260px;
     background-size: contain;
   }
   .contact-us{
-    min-height: 243px;
-    height:initial;
+    top:0;
+    margin-bottom:0px;
     h1{
       font-size: 50px;
     }
@@ -191,6 +195,7 @@ $screen-sm-min: 768px;
       height:140px;
     }
   }
+
   .businessAnalytics{
     h1{
       padding: 15px 0;
@@ -200,11 +205,13 @@ $screen-sm-min: 768px;
     font-size: 22px;
     line-height: .8;
     }
+    .businessAnalyticsContent{
+      top:76px;
+    }
   }
   .logistics{
-    //margin-top: 20px;
     background-position-x: 455px;
-    background-position-y: 180px;
+    background-position-y: 256px;
     h1{
       font-size: 50px;
       padding-bottom: 40px;
@@ -226,10 +233,10 @@ $screen-sm-min: 768px;
   }
   .engineering{
     background-position-x: -128px;
-    margin-top: -20px;
+    top:34px;
     h1{
       font-size: 50px;
-      padding-bottom: 20px;
+      padding: 20px 0;
       margin-top:20px;
     }
     p{
@@ -240,14 +247,119 @@ $screen-sm-min: 768px;
       column-count: 2;
     }
   }
+  .cyber{
+    display: block;
+    background: url(./images/cyber-background.png) no-repeat;
+    background-size: 33%;
+    background-position-x:left;
+    background-position-y:bottom;
+    width: 100%;
+    height: 100%;
+    top:34px;
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
+  .education{
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    top:34px;
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    p{
+      font-size: 22px;
+      line-height: .8;
+    }
+    span p{
+      column-count: 2;
+    }
+  }
+  .research{
+    top:34px;
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
+  .about{
+    img{
+      display: block;
+      margin:0 auto;
+    }
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    p{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
+  .team{
+    img{
+      width:150px;
+    }
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    h3{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
+  .contractArea{
+    h1{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    h3{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
   footer{
-    height:188px;
+    height:150px;
     .footerForm{
       a{
         //margin-left: 90px;
       }
     }
+    .blueFooter{
+      height: 105px;
+    }
     .whiteFooter{
+      height:40px;
       .footerLogo{
         a{
           img{
@@ -290,6 +402,9 @@ $screen-sm-min: 768px;
       top:310px;
     }
   }
+  .headerLogo{
+    margin-top: -40px;
+  }
   .services, .contracts, .training{
     h2{
       font-size: 32px;
@@ -330,7 +445,15 @@ $screen-sm-min: 768px;
   .background{
     background-position-x: 493px;
   }
+  .logistics{
+    background-position-x: 520px;
+    background-position-y: 300px;
+  }
+  .engineeringBackground{
+    background-position-x: 0px;
+  }
   .engineering{
+    top:5px;
     background-position-y: -84px;
     background-position-x: 0px;
     margin-top: 0px;
@@ -338,6 +461,29 @@ $screen-sm-min: 768px;
       margin-top:80px;
     }
   }
+  .contactBackground{
+    background-position-y:60px;
+  }
+  .education{
+    background-size: cover;
+  }
+  .research{
+    background-position-y: bottom;
+    background-position-x: right;
+  }
+  .awardColumns{
+    column-count: 4;
+  }
+  .support-services{
+    h2{
+      width:100%;
+    }
+    .columns{
+      column-count: 3;
+    }
+
+  }
+
   footer{
     .footerForm{
       a{
@@ -366,6 +512,9 @@ $screen-sm-min: 768px;
       font-size: 18px;
     }
   }
+  .headerLogo{
+    margin-top: 4px;
+  }
   .headerImage{
     height:490px;
     span.whiteArea{
@@ -383,13 +532,21 @@ $screen-sm-min: 768px;
     max-height: 480px;
   }
   .our-clients{
-    margin-top: -385px;
+    margin-top: -360px;
   }
   .climbing-wall{
     max-height: 571px;
   }
   .background {
     background-position-x: 893px;
+  }
+  .engineeringBackground{
+
+    background-position-y: bottom;
+  }
+  .logistics {
+    background-position-x: 717px;
+    background-position-y: 210px;
   }
 
   footer{
@@ -435,7 +592,15 @@ $screen-sm-min: 768px;
   .businessAnalytics{
     background-position-y: -161px;
   }
+  .logistics {
+    background-position-x: 928px;
+    background-position-y: 103px;
+  }
   .engineering {
     background-position-y: -227px;
+  }
+  .contactBackground{
+    position: relative;
+    top:60px;
   }
 }

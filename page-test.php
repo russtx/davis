@@ -1,87 +1,52 @@
 <?php get_header(); ?>
 
-<div id="fullpage">
-	<div class="section first " id="section0">
-		<div class="intro">
-			<h1>Fixed elements</h1>
-			<p>Create your own headers and footers</p>
-		</div>
-	</div>
-	<section class="section second">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 is-animated">
-                <img class="img-responsive" src="https://placeimg.com/300/350/nature">
-            </div>
-            <div class="col-sm-4 is-animated">
-                <img class="img-responsive" src="https://placeimg.com/300/350/people">
-            </div>
-            <div class="col-sm-4 is-animated">
-                <img class="img-responsive" src="https://placeimg.com/300/350/tech">
-            </div>
-            <div class="col-xs-12 text-center is-animated__single">
-                <button type="button" class="btn btn-lg">A Simple Button</button>
-            </div>
-        </div><!--end of row-->
-    </div><!--end of container-->
-</section>
-<section class="section third">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-3 col-sm-offset-3 is-animated">
-              <img class="img-responsive" src="https://placeimg.com/300/350/tech">
-          </div>
-          <div class="col-sm-3 is-animated">
-              <img class="img-responsive" src="https://placeimg.com/300/350/any">
-          </div>
-          <div class="col-xs-12 text-center is-animated__single">
-              <button type="button" class="btn btn-lg">A Simple Button</button>
-          </div>
-      </div><!--end of row-->
-  </div><!--end of container-->
-</section>
-<section class="section third">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-3 col-sm-offset-3 is-animated">
-              <img class="img-responsive" src="https://placeimg.com/300/350/tech">
-          </div>
-          <div class="col-sm-3 is-animated">
-              <img class="img-responsive" src="https://placeimg.com/300/350/any">
-          </div>
-          <div class="col-xs-12 text-center is-animated__single">
-              <button type="button" class="btn btn-lg">A Simple Button</button>
-          </div>
-      </div><!--end of row-->
-  </div><!--end of container-->
-</section>
-	<div class="section " id="section0">
-		<div class="intro">
-			<h1>Fixed elements</h1>
-			<p>Create your own headers and footers</p>
-		</div>
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-			<div class="intro">
-				<h1>How to do it</h1>
+
+<section id="location">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 locationContent">
+				<h2>OUR LOCATION</h2>
 				<p>
-					You will need to place your header and footer outside the plugin's wrapper.
-					This way it won't move on scrolling. Take a look at the source code of this page.
+					Since 1996 Bike Works has been a cornerstone in providing sales and service for cyclists in the Fredericksburg area.
+					Located in the heart of downtown at 104 William Street, our location offers quick access to the numerous paved trails,
+					off-road trails, coffee shops, local breweries and great food! We are conveniently located near
+					<a href="http://www.Fredericksburg.gov/documentcenter/view/6940">two public parking lots</a>
+					and also provide a loading zone to utilize for those drop-offs and pick-ups.
 				</p>
+				<span class="mapLink">
+					<a href="https://www.google.com/maps/place/104+William+St,+Fredericksburg,+VA+22401/@38.3038555,-77.4611515,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6c20560e591d1:0xd29abf1e9b981e60!8m2!3d38.3038555!4d-77.4589628">104 William Street Fredericksburg Virginia 22401</a>
+				</span>
+				<p>
+					Monday-Friday 10a-7p<br />
+					Saturday 10a-5p<br />
+					Sunday Closed
+				</p>
+				<span class="telLink">
+					<a href="tel:5403738900">Tel:540-373-8900</a><br />
+					<a href="tel:5403730836">Tel:540-373-0836</a>
+				</span>
+				<a href="<?php echo home_url(); ?>/about/" class="btn-main">ABOUT US</a>
 			</div>
-		</div>
+			<div class="col-xs-12 col-sm-6 locationMap">
+				<div id="map">
+					<?php $location = get_field('location', 'option');
 
-	    <div class="slide" id="slide2">
-			<h1>Slide 2</h1>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/iphone-blue.png" alt="iphone" id="iphone-two" />
-		</div>
+								if(!empty($location)): ?>
 
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Enjoy it</h1>
-		</div>
-		<?php get_footer(); ?>
-	</div>
-</div>
+									<div class="acf-map google-map">
+
+										<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+
+									</div>
+
+							<?php endif; ?>
+
+						</div><!-- Map -->
+			</div><!-- locationMap -->
+		</div><!-- row -->
+	</div><!-- container -->
+</section><!-- location -->
+
+
+
+<?php get_footer(); ?>

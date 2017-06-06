@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Chathura" rel="stylesheet">
     <script src="https://use.typekit.net/pbi3vhp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php wp_head(); ?>
 	</head>

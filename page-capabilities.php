@@ -58,7 +58,7 @@
 		<div class="businessAnalytics">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+					<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 businessAnalyticsContent">
 						<h1>BUSINESS ANALYTICS</h1>
 						<?php the_field('business_analytics_content'); ?>
 						<?php the_field('business_analytics_list') ?>
@@ -71,37 +71,41 @@
 		<div class="logistics">
 			<div class="container">
 				<div class="row">
-					<h1>LOGISTICS</h1>
-					<div class="col-xs-6 logisticsContent">
-						<h2>LOGISTICS AN LIFE CYCLE SUPPORT</h2>
-						<?php the_field('logistics_and_life_cycle_support_content'); ?>
-						<span><?php the_field('logistics_and_life_cycle_support_list'); ?></span>
-					</div>
-					<div class="col-xs-6 logisticsContent">
-						<h2>QUALITY ASSURANCE (QA) SUPPORT</h2>
-						<?php the_field('quality_assurance_support_content'); ?>
-						<span><?php the_field('quality_assurance_support_list'); ?></span>
-					</div>
-					<div class="col-xs-6 logisticsContent">
-						<h2>EQUIPMENT SUSTAINMENT &amp; TRAINING</h2>
-						<?php the_field('equipment_sustainment_and_training_content'); ?>
-						<span><?php the_field('equipment_sustainment_and_training_list'); ?></span>
-					</div>
+					<div class="col-xs-12 logisticsContainer">
+						<h1>LOGISTICS</h1>
+						<div class="col-xs-6 logisticsContent">
+							<h2>LOGISTICS AN LIFE CYCLE SUPPORT</h2>
+							<?php the_field('logistics_and_life_cycle_support_content'); ?>
+							<span><?php the_field('logistics_and_life_cycle_support_list'); ?></span>
+						</div>
+						<div class="col-xs-6 logisticsContent">
+							<h2>QUALITY ASSURANCE (QA) SUPPORT</h2>
+							<?php the_field('quality_assurance_support_content'); ?>
+							<span><?php the_field('quality_assurance_support_list'); ?></span>
+						</div>
+						<div class="col-xs-6 logisticsContent">
+							<h2>EQUIPMENT SUSTAINMENT &amp; TRAINING</h2>
+							<?php the_field('equipment_sustainment_and_training_content'); ?>
+							<span><?php the_field('equipment_sustainment_and_training_list'); ?></span>
+						</div>
+					</div><!-- logisticsContainer -->
 				</div><!-- row -->
 			</div><!-- container -->
 		</div><!-- logistics -->
 	</div><!-- section2 -->
 	<div class="section" id="section3">
 		<div class="engineering">
-			<h1>ENGINEERING</h1>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-						<?php the_field('engineering_content'); ?>
-						<span><?php the_field('engineering_list'); ?></span>
-					</div>
-				</div><!-- row -->
-			</div><!-- container -->
+			<div class="engineeringBackground wow slideInUp ">
+				<h1>ENGINEERING</h1>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 engineeringContent">
+							<?php the_field('engineering_content'); ?>
+							<span><?php the_field('engineering_list'); ?></span>
+						</div>
+					</div><!-- row -->
+				</div><!-- container -->
+			</div><!-- engineeringBackground -->
 		</div><!-- engineering -->
 	</div><!-- section3 -->
 	<div class="section" id="section4">
@@ -109,7 +113,7 @@
 			<h1>Cyber</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 cyberContent">
 						<h2>PROGRAM OFFICE SUPPORT</h2>
 						<?php the_field('program_office_support_content'); ?>
 						<span><?php the_field('program_office_support_list'); ?></span>
@@ -122,7 +126,7 @@
 		</div><!-- cyber -->
 	</div><!-- section4 -->
 	<div class="section" id="section5">
-		<div class="Education">
+		<div class="education">
 			<h1>EDUCATION</h1>
 			<div class="container">
 				<div class="row">
@@ -173,7 +177,7 @@
 								<p>540 542 3079</p>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-4 contactForm">
+						<div class="col-xs-12 col-sm-4 contactForm wow slideInUp">
 							<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 						</div>
 					</div><!--row -->
