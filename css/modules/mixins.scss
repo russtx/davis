@@ -9,7 +9,7 @@
   width: 130px;
   height: 45px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   &:hover{
     background-color: #fff;
@@ -18,12 +18,17 @@
 }
 .solidFoundationButton{
   display: block;
-  width: 80px;
+  width: 85px;
   margin: 0 auto;
-  height: 20px;
-  border: solid 1px $red;
-  border-radius: 10px;
+  height: 28px;
+  border: solid 2px $red;
+  border-radius: 14px;
   text-align: center;
   color: $red;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 900;
+  &:hover{
+    background-color: $red;
+    color:#fff;
+  }
 }

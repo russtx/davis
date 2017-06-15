@@ -6,43 +6,43 @@
 			<h1>CAPABILITIES</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#businessAnalytics">
 							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
 							<h2>BUSINESS ANALYTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('business_analytics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#logistics">
 							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
-							<h2>lOGISTICS</h2>
+							<h2>LOGISTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('logistics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#engineering">
 							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
 							<h2>ENGINEERING</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('engineering', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#cyber">
 							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
 							<h2>CYBER</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('cyber', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#education">
 							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
 							<h2>EDUCATION</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('education', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/research">
 							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
 							<h2>RESEARCH &#38; DEVELOPMENT</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('research_&_development', 'option' ), $num_words = 10, $more = '...' ); ?></p>
@@ -52,10 +52,10 @@
 			</div><!-- container -->
 
 		</div><!-- capabilities -->
-		<div class="frogMan animated slideInRight "></div>
+		<div class="frogMan wow slideInUp "></div>
 	</div>
 	<div class="section " id="section1">
-		<div class="businessAnalytics">
+		<div class="businessAnalytics" id="businessAnalytics">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 businessAnalyticsContent">
@@ -68,22 +68,22 @@
 		</div><!-- businessAnalytics -->
 	</div><!-- section1 -->
 	<div class="section" id="section2">
-		<div class="logistics">
+		<div class="logistics" id="logistics">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 logisticsContainer">
+					<div class="col-xs-12  logisticsContainer">
 						<h1>LOGISTICS</h1>
-						<div class="col-xs-6 logisticsContent">
+						<div class="col-xs-12 col-sm-6 logisticsContent">
 							<h2>LOGISTICS AN LIFE CYCLE SUPPORT</h2>
 							<?php the_field('logistics_and_life_cycle_support_content'); ?>
 							<span><?php the_field('logistics_and_life_cycle_support_list'); ?></span>
 						</div>
-						<div class="col-xs-6 logisticsContent">
+						<div class="col-xs-12 col-sm-6 logisticsContent">
 							<h2>QUALITY ASSURANCE (QA) SUPPORT</h2>
 							<?php the_field('quality_assurance_support_content'); ?>
 							<span><?php the_field('quality_assurance_support_list'); ?></span>
 						</div>
-						<div class="col-xs-6 logisticsContent">
+						<div class="col-xs-12 col-sm-6 logisticsContent">
 							<h2>EQUIPMENT SUSTAINMENT &amp; TRAINING</h2>
 							<?php the_field('equipment_sustainment_and_training_content'); ?>
 							<span><?php the_field('equipment_sustainment_and_training_list'); ?></span>
@@ -94,7 +94,7 @@
 		</div><!-- logistics -->
 	</div><!-- section2 -->
 	<div class="section" id="section3">
-		<div class="engineering">
+		<div class="engineering" id="engineering">
 			<div class="engineeringBackground wow slideInUp ">
 				<h1>ENGINEERING</h1>
 				<div class="container">
@@ -109,7 +109,7 @@
 		</div><!-- engineering -->
 	</div><!-- section3 -->
 	<div class="section" id="section4">
-		<div class="cyber">
+		<div class="cyber" id="cyber">
 			<h1>Cyber</h1>
 			<div class="container">
 				<div class="row">
@@ -126,11 +126,11 @@
 		</div><!-- cyber -->
 	</div><!-- section4 -->
 	<div class="section" id="section5">
-		<div class="education">
+		<div class="education" id="education">
 			<h1>EDUCATION</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 whiteBackground">
 						<?php the_field('education_content'); ?>
 						<span><?php the_field('education_list'); ?></span>
 					</div>
@@ -139,7 +139,7 @@
 		</div><!-- education -->
 	</div><!-- section5 -->
 	<div class="section" id="section6">
-		<div class="research">
+		<div class="research" id="research">
 			<h1>RESEARCH AND DEVELOPEMENT</h1>
 			<div class="container">
 				<div class="row">
@@ -154,6 +154,7 @@
 			</div><!-- container -->
 		</div><!-- research -->
 	</div><!-- section6 -->
+
 	<div class="section" id="section7">
 		<div class="contactBackground">
 			<div class="contact-us">

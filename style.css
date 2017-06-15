@@ -32,7 +32,7 @@ import bootstrap
   width: 130px;
   height: 45px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -41,16 +41,22 @@ import bootstrap
   color: #123d61;
 }
 
-.solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main {
+.solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main, .single .subButton a.btn-main {
   display: block;
-  width: 80px;
+  width: 85px;
   margin: 0 auto;
-  height: 20px;
-  border: solid 1px #822222;
-  border-radius: 10px;
+  height: 28px;
+  border: solid 2px #822222;
+  border-radius: 14px;
   text-align: center;
   color: #822222;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.solidFoundationButton:hover, .solidFoundationContentArea a.btn-main:hover, .whiteBand a.btn-main:hover, .stay-updated a.btn-main:hover, .single .subButton a.btn-main:hover {
+  background-color: #822222;
+  color: #fff;
 }
 
 /*Wordpress basic styles (those inserted by the editor)*/
@@ -121,7 +127,7 @@ blockquote.right {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Chathura', sans-serif;
+  font-family: 'rift', sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -129,6 +135,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 body {
   background-color: white;
   font-family: 'Chathura', sans-serif;
+  width: 100%;
 }
 
 /*======================= Header ============================================ */
@@ -154,7 +161,12 @@ body {
   float: right;
 }
 
+.masthead .row {
+  height: 0;
+}
+
 .navbar-default {
+  height: 0;
   z-index: 9999;
   background: transparent;
   border-color: transparent;
@@ -174,7 +186,7 @@ body {
 }
 
 .navbar-default .navbar-nav {
-  background-color: #123d61;
+  background-color: #a1bbd1;
 }
 
 .navbar-default .navbar-nav li a {
@@ -191,6 +203,10 @@ body {
   border-color: #fff;
 }
 
+.navButton {
+  height: 0;
+}
+
 .navbar-header button {
   margin-top: -40px;
 }
@@ -198,6 +214,10 @@ body {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
   color: #822222;
+}
+
+.navbar {
+  min-height: 0;
 }
 
 .headerSocials .twitter {
@@ -235,13 +255,40 @@ body {
   overflow: auto;
 }
 
+#fullpage {
+  overflow: hidden;
+}
+
+.mainContent {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.mainContent h1 {
+  text-align: center;
+  color: #822222;
+  font-size: 36px;
+  font-weight: 900;
+  padding: 0 0 0 0;
+  margin: 6px 0 20px 0;
+}
+
+.mainContent p {
+  font-size: 20px;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #123d61;
+  font-weight: 600;
+}
+
 .header {
   display: block;
   width: 100%;
 }
 
 .headerLogo {
-  margin-top: 100px;
+  margin-top: 98px;
 }
 
 .headerLogo img {
@@ -285,22 +332,14 @@ body {
 }
 
 .services h2, .contracts h2, .training h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 6px 0 0 0;
 }
 
-.services p, .contracts p, .training p {
-  font-size: 16px;
-  line-height: .8;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  color: #123d61;
-}
-
 .capabilities {
-  margin-top: -35px;
+  margin-top: 100px;
 }
 
 .capabilities h1 {
@@ -309,11 +348,11 @@ body {
   font-size: 36px;
   font-weight: 900;
   padding: 0 0 0 0;
-  margin: 6px 0 0 0;
+  margin: 6px 0 20px 0;
 }
 
 .capabilitiesContentLink {
-  min-height: 160px;
+  min-height: 180px;
 }
 
 .capabilitiesContentLink img {
@@ -323,9 +362,8 @@ body {
 }
 
 .capabilitiesContentLink h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
@@ -334,11 +372,12 @@ body {
 
 .capabilitiesContentLink p {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   color: #123d61;
+  font-weight: 600;
 }
 
 .capabilitiesContentLink a {
@@ -350,13 +389,12 @@ body {
   height: 100%;
   background: url(./images/frogman.png) no-repeat;
   background-size: cover;
-  bottom: 0px;
   position: absolute;
   width: 100%;
 }
 
 .our-clients {
-  margin-top: -37px;
+  margin-top: 80px;
 }
 
 .our-clients h1 {
@@ -365,7 +403,7 @@ body {
   font-size: 36px;
   font-weight: 900;
   padding: 0 0 0 0;
-  margin: 6px 0 0 0;
+  margin: 6px 0 20px 0;
 }
 
 .clientArea {
@@ -383,17 +421,26 @@ body {
   height: 100%;
   background: url(./images/climbing-wall.png) no-repeat;
   background-size: cover;
-  bottom: 0px;
   position: absolute;
   width: 100%;
 }
 
 .solid-foundation {
   display: block;
-  bottom: 0px;
-  position: absolute;
+  position: relative;
+  margin-top: 200px;
   width: 100%;
   height: 100%;
+}
+
+.solid-foundation h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: right;
+  color: #822222;
+  padding: 0 20px 0 0;
+  margin: 6px 0 20px 0;
 }
 
 .mountain {
@@ -401,7 +448,7 @@ body {
   background: url(./images/solid-foundation.png) no-repeat;
   background-size: cover;
   background-position-x: -32px;
-  background-position-y: 100px;
+  background-position-y: 174px;
   bottom: 0px;
   position: absolute;
   width: 100%;
@@ -410,32 +457,23 @@ body {
 
 .solidFoundationContentArea {
   position: relative;
-  top: 100px;
   padding-left: 15px;
-}
-
-.solidFoundationContentArea h1 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: .8;
-  text-align: right;
-  color: #822222;
-  padding: 0 0 0 0;
-  margin: 6px 0 6px 0;
+  padding-right: 22px;
 }
 
 .solidFoundationContentArea p {
   text-align: right;
-  font-size: 16px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   color: #123d61;
+  font-weight: 600;
 }
 
 .solidFoundationContentArea a.btn-main {
   float: left;
-  margin: 5px 0 0 25px;
+  margin: 5px 0 0 15px;
   text-decoration: none;
 }
 
@@ -444,18 +482,18 @@ body {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 135px;
+  height: 75px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .whiteBand h2 {
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 30px 0 6px 0;
+  margin: 11px 0 6px 0;
 }
 
 .whiteBand a.btn-main {
@@ -472,13 +510,13 @@ body {
 }
 
 .blogArea h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: left;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 6px 0 6px 15px;
+  margin: 6px 0 20px 0px;
 }
 
 .redBox {
@@ -488,26 +526,26 @@ body {
 }
 
 .redBox h3 {
-  font-size: 26px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: .8;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   padding: 0 0 0 0;
-  margin: 6px 0 6px -7px;
+  margin: 10px 0 6px -7px;
 }
 
 .blueBox {
-  height: 100px;
+  display: inline-block;
   background-color: rgba(18, 61, 97, 0.5);
   margin-bottom: 20px;
 }
 
 .blueBox h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: .8;
+  line-height: 1;
   text-align: left;
   text-transform: uppercase;
   color: #fff;
@@ -526,11 +564,12 @@ body {
 
 .blueBox p {
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  margin: 0 0 10px 0;
   color: #fff;
+  font-weight: 600;
 }
 
 .blueBox a {
@@ -543,7 +582,7 @@ body {
 
 .stay-updated {
   position: relative;
-  top: 65px;
+  margin-top: 120px;
 }
 
 .stay-updated a.btn-main {
@@ -557,7 +596,7 @@ body {
 
 .stay-updated a.left-side {
   float: left;
-  margin: 0 0 0 0px;
+  margin: 0 0 0 25px;
 }
 
 .stay-updated a.right-side {
@@ -579,8 +618,8 @@ body {
   line-height: .8;
   text-align: center;
   color: #822222;
-  padding: 18px 0 0 0;
-  margin: 6px 0 6px 15px;
+  padding: 35px 0 0 0;
+  margin: 20px 0 6px 15px;
 }
 
 .whiteBand-2 .twitter {
@@ -591,11 +630,19 @@ body {
   float: right;
 }
 
+.whiteBand-2 .twitter:hover {
+  opacity: .5;
+}
+
 .whiteBand-2 .facebook {
   background: url(./images/facebook-2.png) no-repeat;
   display: inline-block;
   width: 60px;
   height: 60px;
+}
+
+.whiteBand-2 .facebook:hover {
+  opacity: .5;
 }
 
 .clearfix {
@@ -604,20 +651,20 @@ body {
 
 .contact-us {
   position: relative;
-  top: 100px;
+  margin-top: 60px;
   min-height: 560px;
   height: 100%;
   margin-bottom: 10px;
 }
 
 .contactTitle h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .contactInfo h3 {
@@ -632,11 +679,12 @@ body {
 
 .contactInfo p {
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   color: #123d61;
+  font-weight: 600;
 }
 
 .contactForm .form-control {
@@ -644,6 +692,7 @@ body {
   border-radius: 12px;
   border-color: #822222;
   color: #822222;
+  font-size: 20px;
 }
 
 .contactForm .form-group {
@@ -660,6 +709,8 @@ body {
   border-radius: 15px;
   border-color: #822222;
   color: #822222;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .contactForm ::-webkit-input-placeholder {
@@ -670,7 +721,7 @@ body {
 }
 
 .contactForm :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 4 to 20 */
   color: #822222 !important;
   font-weight: 700;
   opacity: 1;
@@ -714,8 +765,10 @@ body {
   display: block;
   background: url(./images/business-analytics-background.png) no-repeat;
   background-size: cover;
+  background-position-y: 100px;
   width: 100%;
   height: 100%;
+  margin-top: 100px;
 }
 
 .businessAnalytics .businessAnalyticsContent {
@@ -724,22 +777,23 @@ body {
 }
 
 .businessAnalytics h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .businessAnalytics p {
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 10px 20px 0 20px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .businessAnalytics p:nth-child(3) {
@@ -749,29 +803,27 @@ body {
 
 .logistics {
   display: block;
-  background: url(./images/logistics-background.png) no-repeat;
   background-position-x: 155px;
-  background-position-y: 174px;
+  background-position-y: 353px;
   background-size: cover;
   width: 100%;
   height: 100%;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 .logistics h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .logistics h2 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: .6;
   text-align: left;
   color: #123d61;
   padding: 0 0 0 0;
@@ -780,11 +832,12 @@ body {
 
 .logistics p {
   text-align: left;
-  font-size: 13px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .logistics span p {
@@ -798,7 +851,7 @@ body {
 }
 
 .logisticsContent {
-  min-height: 230px;
+  min-height: 300px;
 }
 
 .engineeringBackground {
@@ -806,6 +859,7 @@ body {
   background: url(./images/engineering-background.png) no-repeat;
   background-size: cover;
   background-position-x: -250px;
+  background-position-y: 32px;
   width: 100%;
   height: 100%;
 }
@@ -813,28 +867,29 @@ body {
 .engineering {
   display: block;
   position: relative;
-  top: 95px;
+  margin-top: 140px;
   width: 100%;
   height: 100%;
 }
 
 .engineering h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .engineering p {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .engineering span p {
@@ -845,36 +900,36 @@ body {
 
 .cyber {
   position: relative;
-  top: 43px;
+  margin-top: 100px;
 }
 
 .cyber h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 20px 0 20px 0px;
 }
 
 .cyberContent h2 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: .6;
   text-align: left;
   color: #123d61;
   padding: 0 0 0 0;
-  margin: 5px 0 0px 0px;
+  margin: 10px 0 10px 0px;
 }
 
 .cyberContent p {
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   line-height: .7;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .cyberContent span p {
@@ -888,30 +943,31 @@ body {
   background: url(./images/education-background.png) no-repeat;
   background-size: cover;
   background-position-x: -180px;
-  background-position-y: 54px;
+  background-position-y: 144px;
   width: 100%;
   height: 100%;
   position: relative;
-  top: 95px;
+  margin-top: 100px;
 }
 
 .education h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .education p {
   text-align: left;
-  font-size: 15px;
-  line-height: .7;
+  font-size: 20px;
+  line-height: .9;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .education span p {
@@ -925,27 +981,26 @@ body {
   background: url(./images/research-background.png) no-repeat;
   background-size: contain;
   background-position-x: -10px;
-  background-position-y: 268px;
+  background-position-y: 488px;
   width: 100%;
   height: 100%;
   position: relative;
-  top: 95px;
+  margin-top: 140px;
 }
 
 .research h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 0 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .research h2 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: .6;
   text-align: center;
   color: #123d61;
   padding: 0 0 0 0;
@@ -954,11 +1009,12 @@ body {
 
 .research p {
   text-align: center;
-  font-size: 15px;
-  line-height: .7;
+  font-size: 20px;
+  line-height: .9;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .research span p {
@@ -988,21 +1044,21 @@ body {
   text-align: left;
   color: #822222;
   padding: 20px 0 0 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .about p {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .team {
   position: relative;
-  top: 20px;
 }
 
 .team h1 {
@@ -1028,24 +1084,28 @@ body {
   line-height: .8;
   text-align: center;
   color: #822222;
-  padding: 0px 0 0 0;
+  padding: 20px 0 0 0;
   margin: 0px 0 0px 0px;
 }
 
 .employeeInfo h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: .8;
   padding: 0 0 20px 0;
   margin: 5px 0px 0 0px;
   color: #123d61;
 }
 
-.page-id-12 .stay-updated, .page-id-14 .stay-updated {
+.page-id-12 #main-container, .page-id-14 #main-container, .page-id-197 #main-container, .page-id-195 #main-container {
+  overflow: inherit;
+}
+
+.page-id-12 .stay-updated, .page-id-14 .stay-updated, .page-id-197 .stay-updated, .page-id-195 .stay-updated {
   max-height: initial;
 }
 
-.page-id-12 .background, .page-id-14 .background {
+.page-id-12 .background, .page-id-14 .background, .page-id-197 .background, .page-id-195 .background {
   background-size: 65%;
   background-position-x: right;
   background-position-y: bottom;
@@ -1053,27 +1113,54 @@ body {
   height: initial;
 }
 
-.page-id-12 .contact-us, .page-id-14 .contact-us {
+.page-id-12 .contact-us, .page-id-14 .contact-us, .page-id-197 .contact-us, .page-id-195 .contact-us {
   top: 100px;
 }
 
-.page-id-12 footer, .page-id-14 footer {
+.page-id-12 .contact-us h1, .page-id-14 .contact-us h1, .page-id-197 .contact-us h1, .page-id-195 .contact-us h1 {
+  text-align: center;
+  color: #822222;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-id-12 .applyNow, .page-id-14 .applyNow, .page-id-197 .applyNow, .page-id-195 .applyNow {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.page-id-12 .applyNow h1, .page-id-14 .applyNow h1, .page-id-197 .applyNow h1, .page-id-195 .applyNow h1 {
+  text-align: center;
+  color: #822222;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-id-12 footer, .page-id-14 footer, .page-id-197 footer, .page-id-195 footer {
   position: relative;
+}
+
+.page-id-14 .contact-us {
+  min-height: 490px;
+}
+
+.page-id-14 .whiteBand-2 {
+  height: 180px;
 }
 
 .contractArea {
   position: relative;
-  top: 72px;
+  top: 80px;
 }
 
 .contractArea h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: .8;
   text-align: center;
   color: #822222;
   padding: 20px 0 20px 0;
-  margin: 0px 0 0px 0px;
+  margin: 0px 0 20px 0px;
 }
 
 .contractArea h2 {
@@ -1088,7 +1175,7 @@ body {
 
 .contractArea h3 {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   line-height: .8;
   padding: 0 0 0 0;
@@ -1098,17 +1185,19 @@ body {
 
 .contractArea p {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 0px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
 }
 
 .contractArea a {
-  font-size: 18px;
+  font-size: 20px;
   color: #123d61;
+  font-weight: 600;
   padding: 0 0 0 0;
   margin: 0px 0px 0 0px;
 }
@@ -1127,17 +1216,57 @@ body {
 
 .columns ul li {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   line-height: .8;
   padding: 0 0 0 0;
   margin: 0px 0px 0 0px;
   color: #123d61;
+  font-weight: 600;
+}
+
+.acf-map {
+  margin: 0 !important;
+}
+
+.mapContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #123d61;
 }
 
 .locateUs {
-  background-color: #123d61;
+  padding: 20px 40px;
   color: #fff;
+}
+
+.locateUs h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: left;
+  color: #fff;
+  padding: 40px 0 10px 0;
+  margin: 20px 0 0px 0px;
+}
+
+.locateUs p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: .7;
+  padding: 0 0 10px 0;
+  margin: 0px 0px 0 0px;
+  color: #fff;
+}
+
+.mapArea {
+  z-index: 999;
+}
+
+.mapArea iframe {
+  width: 100%;
+  height: 300px;
 }
 
 .acf-map {
@@ -1150,6 +1279,186 @@ body {
 /* fixes potential theme css conflict */
 .acf-map img {
   max-width: inherit !important;
+}
+
+.page-id-190 footer .whiteFooter, .page-id-193 footer .whiteFooter, .page-id-198 footer .whiteFooter {
+  height: 67px;
+}
+
+.loginContainer {
+  display: block;
+  width: 100%;
+  height: 96vh;
+  background-color: #123d61;
+  color: #fff;
+}
+
+.loginArea {
+  top: 150px;
+}
+
+.loginArea h1 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.widget.login {
+  position: relative;
+}
+
+.widget.login h4, .widget.login p:nth-child(3), .widget.login .avatar {
+  display: none;
+}
+
+.widget.login p {
+  font-size: 25px;
+}
+
+.widget.login form input {
+  border: 1px #fff solid;
+  background-color: #123d61;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 1;
+  padding-left: 20px;
+}
+
+.widget.login form .login-submit input {
+  width: 80px;
+  float: right;
+  padding-left: 0px;
+}
+
+.employeeLinks {
+  display: block;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.employeeLinks p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: .8;
+  padding: 0 0 0 0;
+  margin: 0px 0px 20px 0px;
+  color: #123d61;
+  font-weight: 600;
+}
+
+.employeeLinks a.btn-main {
+  border: 1px solid #822222;
+  border-radius: 5px;
+  background-color: #822222;
+  color: #fff;
+  width: 180px;
+  padding: 1px 5px;
+  text-align: center;
+  margin: 8px 0 0 0;
+  float: right;
+  clear: both;
+  text-decoration: none;
+}
+
+.employeeLinks a.btn-main:hover {
+  background-color: #fff;
+  color: #822222;
+}
+
+.members-access-error {
+  font-size: 26px;
+  text-align: center;
+}
+
+a.logout {
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  border: solid 1px #fff;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 1;
+}
+
+.single {
+  overflow: visible;
+}
+
+.single #main-container {
+  overflow: hidden;
+}
+
+.single .blogContainer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+}
+
+.single .subButton {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.single .subButton a.btn-main {
+  float: left;
+  display: block;
+  margin: 5px auto 20px auto;
+  text-decoration: none;
+}
+
+.single .blogArea {
+  margin-top: 100px;
+}
+
+.single .blogArea h1 {
+  text-align: center;
+}
+
+.single .blueBox {
+  display: block;
+  background-color: rgba(18, 61, 97, 0.5);
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.single footer {
+  position: relative;
+}
+
+.blog #main-container {
+  overflow: initial;
+}
+
+.blog footer {
+  position: relative;
+}
+
+.wp-pagenavi {
+  width: 165px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.ourBlog {
+  margin-top: 100px;
+}
+
+.ourBlog h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: .8;
+  text-align: center;
+  color: #822222;
+  padding: 0px 0 0 0;
+  margin: 10px 0 10px 0px;
 }
 
 /*================Footer =============*/
@@ -1175,40 +1484,77 @@ footer .blueFooter {
   background-color: #123d61;
   color: #fff;
   height: 100px;
+  margin-top: -16px;
 }
 
-footer .footerForm .leftPart .form-control {
-  float: right;
-}
-
-footer .footerForm .form-group {
-  margin-bottom: -14px;
-  margin-top: -20px;
-}
-
-footer .footerForm .form-control {
-  height: 24px;
-  border-radius: 12px;
-  border-color: #fff;
-  color: #fff;
+footer .blueFooter h3 {
+  text-align: center;
+  font-size: 18px;
   font-weight: 700;
-  background-color: #123d61;
-  width: 90px;
 }
 
-footer .footerForm input.wpcf7-form-control.wpcf7-submit {
-  height: 16px;
-  border-radius: 8px;
-  border-color: #fff;
-  color: #fff;
-  font-weight: 500;
-  background-color: #123d61;
-  width: 40px;
+footer .widget.login {
   position: relative;
-  top: -11px;
-  margin-left: 40px;
-  font-size: 14px;
-  line-height: 3px;
+  top: -20px;
+  padding: 0;
+}
+
+footer .widget.login p {
+  font-size: 20px;
+}
+
+footer .widget.login form input {
+  border: 1px #fff solid;
+  background-color: #123d61;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .footerForm {
+  height: 100px;
+}
+
+footer .footerForm h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer .footerForm #members-widget-login-3 p:nth-child(2) {
+  display: none;
+}
+
+footer .footerForm #members-widget-login-3 p:nth-child(3) {
+  display: initial;
+}
+
+footer .footerForm #members-widget-login-3 form input {
+  width: 70%;
+  margin-bottom: 2px;
+}
+
+footer .footerForm #members-widget-login-3 form .login-submit input {
+  width: 24%;
+  margin: 0px 65px 0 0;
+  line-height: .8;
+}
+
+footer .footerForm #members-widget-login-3 p.login-username label {
+  margin-bottom: 0;
+}
+
+footer .footerForm #members-widget-login-3 p.login-password label {
+  margin-bottom: 0;
+}
+
+footer .footerForm p.login-password {
+  display: block !important;
 }
 
 footer .footerForm span.forgot {
@@ -1285,6 +1631,7 @@ footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
 footer .whiteFooter .footerMenu ul.menu li a {
   color: #123d61;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer .whiteFooter .footerMenu ul.menu li a:hover {
@@ -1317,6 +1664,24 @@ footer .whiteFooter .footerSocials .facebook {
 
 footer .whiteFooter .footerSocials .facebook:hover {
   background-position-y: 0px;
+}
+
+p.copyright {
+  text-align: left;
+  margin-top: -6px;
+  color: #123d61;
+  font-weight: 600;
+}
+
+p.childress {
+  text-align: right;
+  margin-top: -6px;
+  color: #123d61;
+  font-weight: 600;
+}
+
+p.childress a {
+  color: #123d61;
 }
 
 /* responsive settings */
@@ -1400,16 +1765,18 @@ footer .whiteFooter .footerSocials .facebook:hover {
   }
   .solid-foundation {
     bottom: 0px;
+    margin-top: 0;
+  }
+  .solid-foundation h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-right: 28px;
   }
   .mountain {
     background-position-x: 0px;
   }
   .solidFoundationContentArea {
-    top: 70px;
     padding: 0 50px;
-  }
-  .solidFoundationContentArea h1 {
-    font-size: 50px;
   }
   .solidFoundationContentArea p {
     font-size: 22px;
@@ -1427,24 +1794,25 @@ footer .whiteFooter .footerSocials .facebook:hover {
     bottom: 0px;
   }
   .whiteBand h2 {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 900;
+    margin: 56px 0 10px 0;
   }
   .stay-updated {
-    max-height: 598px;
     height: 100%;
-    top: 22px;
+    margin-top: 92px;
   }
   .blogArea h1 {
     font-size: 50px;
-    margin: 6px 0 30px 0;
+    margin: 30px 0 30px 0;
   }
   .redBox {
     height: 70px;
     width: 60px;
   }
   .redBox h3 {
-    font-size: 35px;
+    font-size: 18px;
+    margin: 18px 0 6px -7px;
   }
   .blueBox {
     height: 150px;
@@ -1461,6 +1829,8 @@ footer .whiteFooter .footerSocials .facebook:hover {
     line-height: .6;
   }
   .whiteBand-2 {
+    position: absolute;
+    bottom: 0;
     height: 240px;
     padding-top: 40px;
   }
@@ -1469,7 +1839,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
   }
   .background {
     background-size: contain;
-    background-position-x: 285px;
+    background-position-x: 430px;
   }
   .contactBackground {
     width: 100%;
@@ -1486,6 +1856,25 @@ footer .whiteFooter .footerSocials .facebook:hover {
   }
   .contactForm textarea {
     height: 140px;
+    font-size: 18px;
+  }
+  .contactForm input.wpcf7-form-control.wpcf7-submit {
+    font-size: 18px;
+    width: 80px;
+  }
+  .contactForm .form-control {
+    font-size: 18px;
+    height: 30px;
+    border-radius: 15px;
+  }
+  .contactInfo h3 {
+    font-size: 22px;
+  }
+  .contactInfo p {
+    font-size: 18px;
+  }
+  .businessAnalytics {
+    margin-top: 90px;
   }
   .businessAnalytics h1 {
     padding: 15px 0;
@@ -1499,8 +1888,9 @@ footer .whiteFooter .footerSocials .facebook:hover {
     top: 76px;
   }
   .logistics {
+    background: url(./images/logistics-background.png) no-repeat;
     background-position-x: 455px;
-    background-position-y: 256px;
+    background-position-y: 400px;
   }
   .logistics h1 {
     font-size: 50px;
@@ -1517,12 +1907,15 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .logistics span p {
     margin-top: 15px;
   }
+  .logisticsContainer {
+    top: 53px;
+  }
   .logisticsContent {
-    min-height: 295px;
+    min-height: 335px;
   }
   .engineering {
+    margin-top: 90px;
     background-position-x: -128px;
-    top: 34px;
   }
   .engineering h1 {
     font-size: 50px;
@@ -1536,6 +1929,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
     column-count: 2;
   }
   .cyber {
+    margin-top: 90px;
     display: block;
     background: url(./images/cyber-background.png) no-repeat;
     background-size: 33%;
@@ -1543,11 +1937,10 @@ footer .whiteFooter .footerSocials .facebook:hover {
     background-position-y: bottom;
     width: 100%;
     height: 100%;
-    top: 34px;
   }
   .cyber h1 {
     font-size: 50px;
-    padding: 20px 0;
+    padding-top: 10px;
     margin-top: 20px;
   }
   .cyber h2 {
@@ -1561,7 +1954,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;
-    top: 34px;
+    margin-top: 90px;
   }
   .education h1 {
     font-size: 50px;
@@ -1576,7 +1969,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
     column-count: 2;
   }
   .research {
-    top: 34px;
+    margin-top: 90px;
   }
   .research h1 {
     font-size: 50px;
@@ -1630,14 +2023,89 @@ footer .whiteFooter .footerSocials .facebook:hover {
     font-size: 22px;
     line-height: .8;
   }
+  .mapArea iframe {
+    padding: 0;
+    margin-bottom: -7px;
+    height: 400px;
+  }
+  .locateUs h2 {
+    font-size: 50px;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  .locateUs p {
+    font-size: 22px;
+    line-height: .8;
+  }
+  .page-id-14 .contact-us {
+    top: 0;
+    min-height: 526px;
+  }
+  .page-id-14 .whiteBand-2 {
+    height: 200px;
+  }
+  .page-id-14 .stay-updated {
+    margin-top: 0;
+  }
+  .page-id-14 .whiteBand-2 {
+    position: relative;
+  }
+  .employeeLinks {
+    margin-top: 45px;
+    display: block;
+    background: url(./images/employee-background.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 96vh;
+  }
+  .employeeLinks .employLinksContent {
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .employeeLinks p {
+    font-size: 22px;
+  }
+  .employeeLinks a.btn-main {
+    font-size: 22px;
+    width: 280px;
+  }
+  .whiteBackground {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
   footer {
     height: 150px;
   }
+  footer .footerForm h2 {
+    margin-top: 10px;
+  }
+  footer .footerForm #members-widget-login-3 form input {
+    width: 40%;
+    float: left;
+    margin-top: 8px;
+    height: 24px;
+  }
+  footer .footerForm #members-widget-login-3 form .login-submit input {
+    margin: 6px 6% 0 0;
+    float: right;
+  }
+  footer .footerForm label {
+    float: left;
+    position: relative;
+    top: 37px;
+    left: 39px;
+  }
   footer .blueFooter {
-    height: 105px;
+    height: 116px;
+    margin-top: -20px;
   }
   footer .whiteFooter {
-    height: 40px;
+    height: 44px;
   }
   footer .whiteFooter .footerLogo a img {
     width: 60px;
@@ -1661,10 +2129,42 @@ footer .whiteFooter .footerSocials .facebook:hover {
   footer .whiteFooter .footerSocials .facebook {
     margin: 4px 0 0 5px;
   }
+  p.copyright {
+    text-align: center;
+    margin-top: -18px;
+    font-size: 18px;
+  }
+  p.childress {
+    text-align: center;
+    margin-top: -18px;
+    font-size: 18px;
+  }
+  .page-content {
+    background: url(./images/single-background.png) no-repeat;
+    background-size: contain;
+    background-position-x: -140px;
+    background-position-y: 190px;
+  }
+  .single .blogContainer {
+    min-height: 900px;
+  }
+  .wp-pagenavi {
+    padding-bottom: 50px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
 @media (min-width: 992px) {
+  .blue-button, .masthead a.btn-main, .masthead a.btn-main {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .navbar-default .navbar-nav li a {
+    font-size: 22px;
+  }
+  .header {
+    margin-top: 100px;
+  }
   .headerImage {
     height: 410px;
   }
@@ -1679,7 +2179,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
     font-weight: 900;
   }
   .services p, .contracts p, .training p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
   }
   .services img, .contracts img, .training img {
@@ -1702,6 +2202,9 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .climbing-wall {
     max-height: 472px;
   }
+  .solid-foundation h1 {
+    margin-right: 77px;
+  }
   .solidFoundationContentArea {
     padding: 0 100px;
   }
@@ -1710,7 +2213,6 @@ footer .whiteFooter .footerSocials .facebook:hover {
   }
   .logistics {
     background-position-x: 520px;
-    background-position-y: 300px;
   }
   .engineeringBackground {
     background-position-x: 0px;
@@ -1743,11 +2245,26 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .support-services .columns {
     column-count: 3;
   }
+  .mapArea iframe {
+    height: 500px;
+  }
+  .locateUs {
+    padding: 20px 80px;
+  }
+  .locateUs h2 {
+    font-size: 70px;
+  }
+  .locateUs p {
+    font-size: 30px;
+  }
+  .page-id-14 .contactBackground {
+    background-position-y: 232px;
+  }
   footer .footerForm a {
     margin-left: 160px;
   }
   footer .whiteFooter .footerMenu ul.menu {
-    width: 600px;
+    width: 700px;
   }
   footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
     margin-left: 125px;
@@ -1758,7 +2275,16 @@ footer .whiteFooter .footerSocials .facebook:hover {
 @media (min-width: 1200px) {
   .masthead a.btn-main {
     padding: 10px;
-    font-size: 18px;
+    font-size: 22px;
+  }
+  .navbar-default .navbar-nav {
+    width: 430px;
+  }
+  .navbar-right {
+    margin-right: -60px;
+  }
+  .navbar-default .navbar-nav li a {
+    font-size: 30px;
   }
   .headerLogo {
     margin-top: 4px;
@@ -1776,11 +2302,41 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .capabilities {
     margin-top: -360px;
   }
+  .capabilities h1 {
+    font-size: 70px;
+  }
+  .capabilitiesContentLink h2 {
+    font-size: 24px;
+  }
+  .capabilitiesContentLink p {
+    font-size: 24px;
+  }
   .frogMan {
     max-height: 480px;
   }
+  .businessAnalytics h1 {
+    font-size: 70px;
+  }
+  .businessAnalytics p {
+    font-size: 24px;
+  }
   .our-clients {
     margin-top: -360px;
+  }
+  .our-clients h1 {
+    font-size: 70px;
+  }
+  .solid-foundation h1 {
+    font-size: 70px;
+  }
+  .solidFoundationContentArea p {
+    font-size: 24px;
+  }
+  .solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main, .single .subButton a.btn-main, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main {
+    height: 38px;
+    width: 105px;
+    border-radius: 19px;
+    font-size: 24px;
   }
   .climbing-wall {
     max-height: 571px;
@@ -1791,9 +2347,89 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .engineeringBackground {
     background-position-y: bottom;
   }
+  .blogArea h1 {
+    font-size: 70px;
+  }
+  .contact-us h1 {
+    font-size: 70px;
+  }
+  .contactBackground {
+    background-position-y: 115px;
+  }
+  .contactInfo h3 {
+    font-size: 30px;
+  }
+  .contactInfo p {
+    font-size: 24px;
+  }
   .logistics {
-    background-position-x: 717px;
-    background-position-y: 210px;
+    background-position-x: 780px;
+  }
+  .logistics h1 {
+    font-size: 70px;
+  }
+  .logistics p {
+    font-size: 24px;
+  }
+  .engineering h1 {
+    font-size: 70px;
+  }
+  .engineering p {
+    font-size: 24px;
+  }
+  .cyber h1 {
+    font-size: 70px;
+  }
+  .cyber h2 {
+    font-size: 32px;
+  }
+  .cyber p {
+    font-size: 24px;
+  }
+  .education h1 {
+    font-size: 70px;
+  }
+  .education p {
+    font-size: 24px;
+  }
+  .research h1 {
+    font-size: 70px;
+  }
+  .research h2 {
+    font-size: 32px;
+  }
+  .research p {
+    font-size: 24px;
+  }
+  .about h1 {
+    font-size: 70px;
+  }
+  .about p {
+    font-size: 24px;
+  }
+  .team h1 {
+    font-size: 70px;
+  }
+  .employeeInfo h2 {
+    font-size: 32px;
+  }
+  .employeeInfo h3 {
+    font-size: 24px;
+  }
+  .page-id-12 .background, .page-id-14 .background {
+    background-size: 59%;
+  }
+  .employeeLinks p {
+    font-size: 24px;
+  }
+  .contractArea h1 {
+    font-size: 70px;
+  }
+  .contractArea h2 {
+    font-size: 32px;
+  }
+  .contractArea p {
+    font-size: 24px;
   }
   footer .footerForm a {
     margin-left: 235px;
@@ -1805,6 +2441,9 @@ footer .whiteFooter .footerSocials .facebook:hover {
 
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: 1600px) {
+  .navbar-right {
+    margin-right: -148px;
+  }
   .capabilities {
     margin-top: -426px;
   }
@@ -1828,8 +2467,7 @@ footer .whiteFooter .footerSocials .facebook:hover {
     background-position-y: -161px;
   }
   .logistics {
-    background-position-x: 928px;
-    background-position-y: 103px;
+    background-position-x: 950px;
   }
   .engineering {
     background-position-y: -227px;
@@ -1837,6 +2475,12 @@ footer .whiteFooter .footerSocials .facebook:hover {
   .contactBackground {
     position: relative;
     top: 60px;
+  }
+  .page-id-14 .contactBackground {
+    top: 0;
+  }
+  .employeeLinks .employLinksContent {
+    margin-left: -150px;
   }
 }
 

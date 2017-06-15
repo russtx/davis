@@ -2,12 +2,35 @@
 #main-container{
   overflow: auto;
 }
+#fullpage{
+  overflow: hidden;
+}
+.mainContent{
+  margin-top:60px;
+  padding:20px;
+  h1{
+    text-align: center;
+    color: $red;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0 0 0 0;
+    margin: 6px 0 20px 0;
+  }
+  p{
+    font-size: 20px;
+    line-height: .8;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color: $blue;
+    font-weight: 600;
+  }
+}
 .header{
   display:block;
   width: 100%;
 }
 .headerLogo{
-  margin-top:100px;
+  margin-top:98px;
   img{
     display: block;
     width: 150px;
@@ -44,41 +67,37 @@
     margin:20px 0 0 0;
   }
   h2{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     padding: 0 0 0 0;
     margin: 6px 0 0 0;
   }
   p{
-    font-size: 16px;
-    line-height: .8;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    color: $blue;
+
   }
 }
 .capabilities{
-  margin-top: -35px;
+  margin-top: 100px;
   h1{
     text-align: center;
     color: $red;
     font-size: 36px;
     font-weight: 900;
     padding: 0 0 0 0;
-    margin: 6px 0 0 0;
+    margin: 6px 0 20px 0;
   }
 }
 .capabilitiesContentLink{
-  min-height:160px;
+  min-height:180px;
   img{
     display:block;
     width:69px;
     margin:0 auto;
   }
   h2{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: .8;
+    //line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
@@ -86,11 +105,12 @@
   }
   p{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     color: $blue;
+    font-weight: 600;
   }
   a{
     text-decoration: none;
@@ -101,19 +121,19 @@
   height: 100%;
   background: url(./images/frogman.png) no-repeat;
   background-size: cover;
-  bottom: 0px;
+  //bottom: 0px;
   position: absolute;
   width: 100%;
 }
 .our-clients{
-  margin-top: -37px;
+  margin-top: 80px;
   h1{
     text-align: center;
     color: $red;
     font-size: 36px;
     font-weight: 900;
     padding: 0 0 0 0;
-    margin: 6px 0 0 0;
+    margin: 6px 0 20px 0;
   }
 }.clientArea{
   min-height: 100px;
@@ -128,7 +148,7 @@
   height: 100%;
   background: url(./images/climbing-wall.png) no-repeat;
   background-size: cover;
-  bottom: 0px;
+  //bottom: 0px;
   position: absolute;
   width: 100%;
 }
@@ -137,47 +157,51 @@
   //background: url(./images/solid-foundation.png) no-repeat;
   //background-size: cover;
   //background-position-x: -32px;
-  bottom: 0px;
-  position: absolute;
+  //bottom: 0px;
+  position: relative;
+  margin-top:200px;
   width: 100%;
-  height: 100%
+  height: 100%;
+  h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: .8;
+    text-align: right;
+    color: $red;
+    padding: 0 20px 0 0;
+    margin: 6px 0 20px 0;
+  }
 }
 .mountain{
   display: block;
   background: url(./images/solid-foundation.png) no-repeat;
   background-size: cover;
   background-position-x: -32px;
-  background-position-y: 100px;
+  background-position-y: 174px;
   bottom: 0px;
   position: absolute;
   width: 100%;
-  height: 100%
+  height: 100%;
+
 }
 .solidFoundationContentArea{
   position: relative;
-  top:100px;
   padding-left:15px;
-  h1{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: .8;
-    text-align: right;
-    color: $red;
-    padding: 0 0 0 0;
-    margin: 6px 0 6px 0;
-  }
+  padding-right: 22px;
+
   p{
     text-align: right;
-    font-size: 16px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     color: $blue;
+    font-weight: 600;
   }
   a.btn-main{
     @extend .solidFoundationButton;
     float: left;
-    margin: 5px 0 0 25px;
+    margin: 5px 0 0 15px;
     text-decoration: none;
   }
 }
@@ -186,16 +210,16 @@
   position: absolute;
   bottom: 0px;
   width:100%;
-  height: 135px;
+  height: 75px;
   background-color: rgba(255, 255, 255, .5);
   h2{
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 30px 0 6px 0;
+    margin: 11px 0 6px 0;
   }
   a.btn-main{
     @extend .solidFoundationButton;
@@ -215,13 +239,13 @@
 }
 .blogArea{
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: left;
     color: $red;
     padding: 0 0 0 0;
-    margin: 6px 0 6px 15px;
+    margin: 6px 0 20px 0px;
   }
 }
 .redBox{
@@ -229,25 +253,24 @@
   height: 50px;
   background-color: $red-trans;
   h3{
-    font-size: 26px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: .8;
+    line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     padding: 0 0 0 0;
-    margin: 6px 0 6px -7px;
+    margin: 10px 0 6px -7px;
   }
 }
 .blueBox{
-  //width:auto;
-  height: 100px;
+  display: inline-block;
   background-color: $blue-trans;
   margin-bottom: 20px;
   h2{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: .8;
+    line-height: 1;
     text-align: left;
     text-transform: uppercase;
     color: #fff;
@@ -266,11 +289,12 @@
   }
   p{
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    margin: 0 0 10px 0;
     color: #fff;
+    font-weight: 600;
   }
   a{
     color: #fff;
@@ -281,7 +305,7 @@
 }
 .stay-updated{
   position: relative;
-  top:65px;
+  margin-top:120px;
   a.btn-main{
     @extend .solidFoundationButton;
     text-decoration: none;
@@ -292,7 +316,7 @@
   }
   a.left-side{
     float: left;
-    margin:0 0 0 0px;
+    margin:0 0 0 25px;
   }
   a.right-side{
     float: left;
@@ -311,8 +335,8 @@
     line-height: .8;
     text-align: center;
     color: $red;
-    padding: 18px 0 0 0;
-    margin: 6px 0 6px 15px;
+    padding: 35px 0 0 0;
+    margin: 20px 0 6px 15px;
   }
   .twitter{
     background: url(./images/twitter-2.png) no-repeat;
@@ -322,6 +346,9 @@
     height: 60px;
     //margin: 10px 0 0 15px;
     float: right;
+    &:hover{
+      opacity:.5;
+    }
   }
   .facebook{
     background: url(./images/facebook-2.png) no-repeat;
@@ -329,7 +356,9 @@
     display: inline-block;
     width: 60px;
     height: 60px;
-    //margin: 10px 0 0 15px;
+    &:hover{
+      opacity:.5;
+    }
   }
 }
 .clearfix{
@@ -337,20 +366,20 @@
 }
 .contact-us{
   position: relative;
-  top:100px;
+  margin-top:60px;
   min-height: 560px;
   height:100%;
   margin-bottom: 10px;
 }
 .contactTitle{
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
 }
 .contactInfo{
@@ -365,11 +394,12 @@
   }
   p{
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     color: $blue;
+    font-weight: 600;
   }
 }
 .contactForm{
@@ -378,13 +408,14 @@
     border-radius: 12px;
     border-color: $red;
     color:$red;
-
+    font-size: 20px;
   }
   .form-group{
     margin-bottom: -14px;
     &:nth-child(1){
       margin-top:-16px;
     }
+
   }
   textarea{
     width:100%;
@@ -392,13 +423,15 @@
     border-radius: 15px;
     border-color: $red;
     color:$red;
+    font-size: 20px;
+    padding-left: 10px;
   }
   ::-webkit-input-placeholder { /* WebKit browsers */
     color: $red !important;
     font-weight: 700;
     opacity: 1;
   }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  :-moz-placeholder { /* Mozilla Firefox 4 to 20 */
     color: $red !important;
     font-weight: 700;
     opacity: 1;
@@ -431,32 +464,36 @@
     }
   }
 }
+
 .businessAnalytics{
   display: block;
   background: url(./images/business-analytics-background.png) no-repeat;
   background-size: cover;
+  background-position-y: 100px;
   width: 100%;
   height:100%;
+  margin-top:100px;
   .businessAnalyticsContent{
     position: relative;
     top:110px;
   }
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   p{
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 10px 20px 0 20px;
     color: $blue;
+    font-weight: 600;
     &:nth-child(3){
       padding-left:+50px;
       line-height: 1.1;
@@ -465,26 +502,26 @@
 }
 .logistics{
   display: block;
-  background: url(./images/logistics-background.png) no-repeat;
+  //background: url(./images/logistics-background.png) no-repeat;
   background-position-x: 155px;
-  background-position-y: 174px;
+  background-position-y: 353px;
   background-size: cover;
   width: 100%;
   height:100%;
-  margin-top:-10px;
+  margin-top:0px;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   h2{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: .6;
+    //line-height: .6;
     text-align: left;
     color: $blue;
     padding: 0 0 0 0;
@@ -492,11 +529,12 @@
   }
   p{
     text-align: left;
-    font-size: 13px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   span p{
     padding-left:+10px;
@@ -508,39 +546,41 @@
   top:96px;
 }
 .logisticsContent{
-  min-height:230px;
+  min-height:300px;
 }
 .engineeringBackground{
   display: block;
   background: url(./images/engineering-background.png) no-repeat;
   background-size: cover;
   background-position-x: -250px;
+  background-position-y: 32px;
   width: 100%;
   height:100%;
 }
 .engineering{
   display: block;
   position: relative;
-  top:95px;
+  margin-top:140px;
 
   width: 100%;
   height:100%;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   p{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   span p{
     margin-top:20px;
@@ -550,34 +590,35 @@
 }
 .cyber{
   position: relative;
-  top:43px;
+  margin-top:100px;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 20px 0 20px 0px;
   }
 }
 .cyberContent{
   h2{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: .6;
+
     text-align: left;
     color: $blue;
     padding: 0 0 0 0;
-    margin: 5px 0 0px 0px;
+    margin: 10px 0 10px 0px;
   }
   p{
     text-align: left;
-    font-size: 15px;
+    font-size: 20px;
     line-height: .7;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   span p{
     margin-top:10px;
@@ -590,27 +631,28 @@
   background: url(./images/education-background.png) no-repeat;
   background-size: cover;
   background-position-x: -180px;
-  background-position-y: 54px;
+  background-position-y: 144px;
   width: 100%;
   height:100%;
   position: relative;
-  top:95px;
+  margin-top:100px;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   p{
     text-align: left;
-    font-size: 15px;
-    line-height: .7;
+    font-size: 20px;
+    line-height: .9;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   span p{
     margin-top:10px;
@@ -623,24 +665,24 @@
   background: url(./images/research-background.png) no-repeat;
   background-size: contain;
   background-position-x: -10px;
-  background-position-y: 268px;
+  background-position-y: 488px;
   width: 100%;
   height:100%;
   position: relative;
-  top:95px;
+  margin-top:140px;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 0 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   h2{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: .6;
+    //line-height: .6;
     text-align: center;
     color: $blue;
     padding: 0 0 0 0;
@@ -648,11 +690,12 @@
   }
   p{
     text-align: center;
-    font-size: 15px;
-    line-height: .7;
+    font-size: 20px;
+    line-height: .9;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   span p{
     margin-top:10px;
@@ -680,20 +723,21 @@
     text-align: left;
     color: $red;
     padding: 20px 0 0 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   p{
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 5px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
 }
 .team{
   position: relative;
-  top:20px;
+  //margin-top:20px;
   h1{
     font-size: 30px;
     font-weight: 700;
@@ -717,19 +761,22 @@
     line-height: .8;
     text-align: center;
     color: $red;
-    padding: 0px 0 0 0;
+    padding: 20px 0 0 0;
     margin: 0px 0 0px 0px;
   }
   h3{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     line-height: .8;
     padding: 0 0 20px 0;
     margin: 5px 0px 0 0px;
     color: $blue;
   }
 }
-.page-id-12, .page-id-14{
+.page-id-12, .page-id-14, .page-id-197, .page-id-195{
+  #main-container {
+    overflow: inherit;
+  }
   .stay-updated{
     max-height: initial;
   }
@@ -741,23 +788,47 @@
     height: initial;
   }
   .contact-us{
+    h1{
+      text-align: center;
+      color: $red;
+      font-size: 40px;
+      font-weight: 700;
+    }
     top:100px;
+  }
+  .applyNow{
+    margin-top:100px;
+    padding:20px;
+    h1{
+      text-align: center;
+      color: $red;
+      font-size: 40px;
+      font-weight: 700;
+    }
   }
   footer{
     position: relative;
   }
 }
+.page-id-14{
+  .contact-us{
+    min-height: 490px;
+  }
+  .whiteBand-2{
+    height:180px;
+  }
+}
 .contractArea{
   position: relative;
-  top:72px;
+  top:80px;
   h1{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: .8;
     text-align: center;
     color: $red;
     padding: 20px 0 20px 0;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 20px 0px;
   }
   h2{
     font-size: 20px;
@@ -770,7 +841,7 @@
   }
   h3{
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: .8;
     padding: 0 0 0 0;
@@ -779,16 +850,18 @@
   }
   p{
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: .8;
     padding: 0 0 0 0;
     margin: 0px 0px 0 0px;
     color: $blue;
+    font-weight: 600;
   }
   a{
-    font-size: 18px;
+    font-size: 20px;
     color: $blue;
+    font-weight: 600;
     padding: 0 0 0 0;
     margin: 0px 0px 0 0px;
   }
@@ -811,18 +884,54 @@
     list-style: none;
     li{
       text-align: left;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 500;
       line-height: .8;
       padding: 0 0 0 0;
       margin: 0px 0px 0 0px;
       color: $blue;
+      font-weight: 600;
     }
   }
 }
-.locateUs{
+.acf-map{
+  margin:0!important;
+}
+.mapContainer{
+  width: 100%;
+  overflow: hidden;
   background-color: $blue;
+}
+.locateUs{
+  padding: 20px 40px;
   color:#fff;
+  h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: .8;
+    text-align: left;
+    color: #fff;
+    padding: 40px 0 10px 0;
+    margin: 20px 0 0px 0px;
+  }
+  p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: .7;
+    padding: 0 0 10px 0;
+    margin: 0px 0px 0 0px;
+    color: #fff;
+  }
+}
+
+.mapArea{
+  z-index: 999;
+  iframe{
+    width:100%;
+
+    height:300px;
+  }
 }
 //maps
 .acf-map {
@@ -835,4 +944,176 @@
 /* fixes potential theme css conflict */
 .acf-map img {
    max-width: inherit !important;
+}
+.page-id-190, .page-id-193, .page-id-198{
+  footer{
+
+    .blueFooter{
+      .footerForm{
+        //visibility: hidden;
+      }
+    }
+    .whiteFooter {
+      height: 67px;
+    }
+  }
+}
+.loginContainer{
+  display: block;
+  width: 100%;
+  height: 96vh;
+  background-color: $blue;
+  color: #fff;
+}
+.loginArea{
+  top:150px;
+  h1{
+    text-align: center;
+    font-weight: 800;
+  }
+}
+.widget.login{
+  position: relative;
+
+  h4, p:nth-child(3), .avatar{
+    display: none;
+  }
+  p{
+    font-size: 25px;
+  }
+  form{
+    input{
+      border: 1px #fff solid;
+      background-color:$blue;
+      width: 100%;
+      height: 30px;
+      border-radius: 15px;
+      line-height: 1;
+      padding-left: 20px;
+    }
+    .login-submit{
+      input{
+        width:80px;
+        float: right;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+.employeeLinks{
+  display: block;
+  width: 100%;
+  margin-top:120px;
+  p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: .8;
+    padding: 0 0 0 0;
+    margin: 0px 0px 20px 0px;
+    color: $blue;
+    font-weight: 600;
+  }
+  a.btn-main{
+    border: 1px solid $red;
+    border-radius: 5px;
+    background-color: $red;
+    color: #fff;
+    width:180px;
+    padding: 1px 5px;
+    text-align:center;
+    margin: 8px 0 0 0;
+    float:right;
+    clear: both;
+    text-decoration: none;
+    &:hover{
+      background-color:#fff ;
+      color: $red;
+    }
+  }
+}
+.members-access-error{
+  font-size: 26px;
+
+  text-align: center;
+}
+a.logout{
+  display: inline-block;
+  color:#fff;
+  font-size: 30px;
+  border:solid 1px #fff;
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin-top:0px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 1;
+}
+.single{
+
+  overflow: visible;
+  #main-container {
+    overflow: hidden;
+  }
+  .blogContainer{
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 590px;
+  }
+  .subButton{
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    a.btn-main{
+      @extend .solidFoundationButton;
+      float: left;
+      display: block;
+      margin: 5px auto 20px auto;
+      text-decoration: none;
+    }
+  }
+  .blogArea{
+    margin-top:100px;
+    h1{
+      text-align: center;
+    }
+  }
+  .blueBox {
+    display: block;
+    background-color: rgba(18, 61, 97, 0.5);
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    height: 350px;
+  }
+  footer{
+    position: relative;
+  }
+}
+.blog{
+  #main-container {
+    overflow: initial;
+  }
+  footer{
+    position: relative;
+  }
+}
+.wp-pagenavi {
+    width: 165px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.ourBlog{
+  margin-top:100px;
+  h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: .8;
+    text-align: center;
+    color: $red;
+    padding: 0px 0 0 0;
+    margin: 10px 0 10px 0px;
+  }
+
 }

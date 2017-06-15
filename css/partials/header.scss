@@ -17,8 +17,12 @@
   .right{
     float: right;
   }
+  .row{
+    height: 0;
+  }
 }
 .navbar-default{
+  height:0;
   z-index: 9999;
   background: transparent;
   border-color: transparent;
@@ -34,7 +38,7 @@
     }
   }
   .navbar-nav{
-    background-color: $blue;
+    background-color: $light-blue;
     li{
       a{
         color: #fff;
@@ -50,6 +54,9 @@
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
   border-color:#fff;
 }
+.navButton{
+  height:0;
+}
 .navbar-header{
   button{
     margin-top: -40px;
@@ -58,6 +65,9 @@
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
   background-color: transparent;
   color:$red;
+}
+.navbar{
+  min-height:0;
 }
 .headerSocials{
   .twitter{

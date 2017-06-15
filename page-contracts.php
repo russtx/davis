@@ -139,29 +139,31 @@
   <div class="contactBackground">
     <div class="contact-us">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 contactTitle">
-            <h1>CONTACT US</h1>
-          </div>
-          <div class="col-xs-12 col-sm-4 contactInfo">
-            <div class="col-xs-6 col-sm-12">
-              <h3>ADDRESS</h3>
-              <p>
-                475 AQUIA TOWNE CENTER DRIVE<BR />
-                SUITE #401 STAFFORD, VA 22504
-              </p>
+        <div class="whiteBackground">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 contactTitle">
+              <h1>CONTACT US</h1>
             </div>
-            <div class="col-xs-6 col-sm-12">
-              <h3>PHONE</h3>
-              <p>540. 548. 5980</p>
-              <h3>FAX</h3>
-              <p>540 542 3079</p>
+            <div class="col-xs-12 col-sm-4 contactInfo">
+              <div class="col-xs-6 col-sm-12">
+                <h3>ADDRESS</h3>
+                <p>
+                  475 AQUIA TOWNE CENTER DRIVE<BR />
+                  SUITE #401 STAFFORD, VA 22504
+                </p>
+              </div>
+              <div class="col-xs-6 col-sm-12">
+                <h3>PHONE</h3>
+                <p>540. 548. 5980</p>
+                <h3>FAX</h3>
+                <p>540 542 3079</p>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 contactForm">
-            <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
-          </div>
-        </div><!--row -->
+            <div class="col-xs-12 col-sm-4 contactForm">
+              <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+            </div>
+          </div><!--row -->
+        </div><!-- whiteBackground -->
       </div><!-- container -->
     </div><!-- contact-us -->
   </div><!-- contactBackground -->

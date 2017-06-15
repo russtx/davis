@@ -20,7 +20,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 col-sm-4 services">
-								<a href="<?php echo home_url(); ?>/#">
+								<a href="<?php echo home_url(); ?>/capabilities/">
 									<div class="col-xs-3">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/services.png" alt="Services Logo" />
 									</div>
@@ -31,7 +31,7 @@
 								</a>
 							</div>
 							<div class="col-xs-12 col-sm-4 contracts">
-								<a href="<?php echo home_url(); ?>/#">
+								<a href="<?php echo home_url(); ?>/contracts/">
 									<div class="col-xs-3">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/contracts.png" alt="Contracts Logo" />
 									</div>
@@ -42,7 +42,7 @@
 								</a>
 							</div>
 							<div class="col-xs-12 col-sm-4 training">
-								<a href="<?php echo home_url(); ?>/#">
+								<a href="<?php echo home_url(); ?>/capabilities/">
 									<div class="col-xs-3">
 										<img src="<?php echo get_template_directory_uri(); ?>/images/training.png" alt="Training Logo" />
 									</div>
@@ -61,43 +61,43 @@
 			<h1>CAPABILITIES</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#businessAnalytics">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
 							<h2>BUSINESS ANALYTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('business_analytics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#logistics">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
 							<h2>LOGISTICS</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('logistics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#engineering">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
 							<h2>ENGINEERING</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('engineering', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#cyber">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
 							<h2>CYBER</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('cyber', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#education">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
 							<h2>EDUCATION</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('education', 'option' ), $num_words = 10, $more = '...' ); ?></p>
 						</a>
 					</div>
-					<div class="col-xs-4 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/#/">
+					<div class="col-xs-6 col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#research">
 							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
 							<h2>RESEARCH &#38; DEVELOPMENT</h2>
 							<p><?php echo $excerpt = wp_trim_words( get_field('research_&_development', 'option' ), $num_words = 10, $more = '...' ); ?></p>
@@ -130,7 +130,7 @@
 						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/navy.png" alt="Navy" />
 					</div>
 					<div class="col-xs-6 col-sm-2 clientArea">
-						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/air-force" alt="Air Force" />
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/air-force.png" alt="Air Force" />
 					</div>
 				</div><!-- row -->
 			</div><!-- container -->
@@ -142,14 +142,16 @@
 			<div class="mountain wow slideInLeft">
 				<div class="container">
 					<div class="row">
+						<h1>A SOLID FOUNDATION</h1>
 						<div class="col-xs-9 col-xs-offset-3 solidFoundationContentArea">
-								<h1>A SOLID FOUNDATION</h1>
+
 								<?php the_field('solid_foundation_content'); ?>
-								<a href="#" class="btn-main left-side">INFORMATION</a>
-								<a href="#" class="btn-main right-side">OFFICERS</a>
+								<a href="<?php echo home_url(); ?>/about/" class="btn-main left-side">INFORMATION</a>
+								<a href="<?php echo home_url(); ?>/about/#team" class="btn-main right-side">OFFICERS</a>
 						</div>
 					</div><!-- row -->
 				</div><!-- container -->
+				<div class="clearfix"></div>
 				<div class="whiteBand wow slideInUp">
 					<div class="container">
 						<div class="row">
@@ -158,14 +160,14 @@
 									TEAMS &amp;<br />
 									BUSINESS OPPS
 								</h2>
-								<a href="#" class="btn-main left-side ">LEARN MORE</a>
+								<a href="<?php echo home_url(); ?>/contracts/" class="btn-main left-side ">LEARN MORE</a>
 							</div>
 							<div class="col-xs-6 whiteBandContent ">
 								<h2>
 									CONTRACT<br />
 									VEHICLES
 								</h2>
-								<a href="#" class="btn-main right-side">LEARN MORE</a>
+								<a href="<?php echo home_url(); ?>/contracts/" class="btn-main right-side">LEARN MORE</a>
 							</div>
 						</div><!-- row -->
 					</div><!-- container -->
@@ -200,7 +202,7 @@
 						</div>
 						<div class="clearfix"></div>
 						<div class="col-xs-9 col-xs-offset-1 col-sm-8 col-sm-offset-2 blogButtons">
-							<a href="#" class="btn-main left-side">OUR BLOG</a>
+							<a href="<?php echo home_url(); ?>/our-blog/" class="btn-main left-side">OUR BLOG</a>
 							<a href="#" class="btn-main right-side">SUBSCRIBE</a>
 						</div>
 					</div><!-- row -->
@@ -210,10 +212,10 @@
 				<h2>FOLLOW US ON SOCIAL MEDIA</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="twitter wow bounce"></div>
+						<a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter wow bounce"></a>
 					</div>
 					<div class="col-xs-6">
-						<div class="facebook wow bounce"></div>
+						<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook wow bounce"></a>
 					</div>
 				</div><!-- row -->
 			</div><!-- whiteBand-2 -->

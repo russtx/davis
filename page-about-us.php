@@ -27,7 +27,7 @@
   </div><!-- about -->
 </div><!-- section0 -->
 <div class="section" id="section1">
-  <div class="team">
+  <div class="team" id="team">
     <h1 class="wow slideInLeft">MEET THE TEAM</h1>
     <div class="container">
       <div class="row row-centered">

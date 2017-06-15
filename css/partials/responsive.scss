@@ -92,16 +92,21 @@ $screen-sm-min: 768px;
   }
   .solid-foundation{
     bottom: 0px;
+    margin-top: 0;
+    h1{
+      font-size: 50px;
+      margin-top:100px;
+      margin-right: 28px;
+    }
   }
   .mountain{
     background-position-x: 0px;
   }
+
   .solidFoundationContentArea{
-    top:70px;
+    //top:70px;
     padding: 0 50px;
-    h1{
-      font-size: 50px;
-    }
+
     p{
     font-size: 22px;
     font-weight: 600;
@@ -119,14 +124,15 @@ $screen-sm-min: 768px;
     height:200px;
     bottom: 0px;
     h2{
-      font-size: 50px;
+      font-size: 36px;
       font-weight: 900;
+      margin: 56px 0 10px 0;
     }
   }
   .stay-updated{
-    max-height:598px;
+    //max-height:598px;
     height:100%;
-    top:22px;
+    margin-top:92px;
     a.left-side{
       //margin-top:145px;
       //margin-left:130px;
@@ -135,17 +141,19 @@ $screen-sm-min: 768px;
       //margin-top:145px;
     }
   }
+
   .blogArea{
     h1{
       font-size: 50px;
-      margin:6px 0 30px 0;
+      margin:30px 0 30px 0;
     }
   }
   .redBox{
     height:70px;
     width:60px;
     h3{
-      font-size: 35px;
+      font-size: 18px;
+      margin: 18px 0 6px -7px;
     }
   }
   .blueBox{
@@ -166,6 +174,8 @@ $screen-sm-min: 768px;
 
   }
   .whiteBand-2{
+    position: absolute;
+    bottom: 0;
     height:240px;
     padding-top: 40px;
     h2{
@@ -174,7 +184,7 @@ $screen-sm-min: 768px;
   }
   .background{
     background-size: contain;
-    background-position-x: 285px;
+    background-position-x: 430px;
   }
   .contactBackground{
     width:100%;
@@ -193,10 +203,30 @@ $screen-sm-min: 768px;
   .contactForm{
     textarea{
       height:140px;
+      font-size: 18px;
+
     }
+    input.wpcf7-form-control.wpcf7-submit{
+      font-size: 18px;
+      width:80px
+    }
+    .form-control{
+      font-size: 18px;
+      height:30px;
+      border-radius: 15px;
+    }
+  }
+  .contactInfo{
+    h3{
+      font-size: 22px;
+    }
+      p{
+        font-size: 18px;
+      }
   }
 
   .businessAnalytics{
+    margin-top:90px;
     h1{
       padding: 15px 0;
       font-size: 50px;
@@ -210,8 +240,9 @@ $screen-sm-min: 768px;
     }
   }
   .logistics{
+    background: url(./images/logistics-background.png) no-repeat;
     background-position-x: 455px;
-    background-position-y: 256px;
+    background-position-y: 400px;
     h1{
       font-size: 50px;
       padding-bottom: 40px;
@@ -228,12 +259,16 @@ $screen-sm-min: 768px;
       margin-top:15px;
     }
   }
+  .logisticsContainer{
+    top:53px;
+  }
   .logisticsContent{
-    min-height: 295px;
+    min-height: 335px;
   }
   .engineering{
+    margin-top: 90px;
     background-position-x: -128px;
-    top:34px;
+
     h1{
       font-size: 50px;
       padding: 20px 0;
@@ -248,6 +283,7 @@ $screen-sm-min: 768px;
     }
   }
   .cyber{
+    margin-top: 90px;
     display: block;
     background: url(./images/cyber-background.png) no-repeat;
     background-size: 33%;
@@ -255,10 +291,10 @@ $screen-sm-min: 768px;
     background-position-y:bottom;
     width: 100%;
     height: 100%;
-    top:34px;
+    //top:34px;
     h1{
       font-size: 50px;
-      padding: 20px 0;
+      padding-top: 10px;
       margin-top:20px;
     }
     h2{
@@ -273,7 +309,7 @@ $screen-sm-min: 768px;
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;
-    top:34px;
+    margin-top:90px;
     h1{
       font-size: 50px;
       padding: 20px 0;
@@ -288,7 +324,7 @@ $screen-sm-min: 768px;
     }
   }
   .research{
-    top:34px;
+    margin-top:90px;
     h1{
       font-size: 50px;
       padding: 20px 0;
@@ -348,18 +384,112 @@ $screen-sm-min: 768px;
       line-height: .8;
     }
   }
+
+
+  .mapArea{
+    iframe{
+      padding:0;
+      margin-bottom: -7px;
+      height:400px;;
+    }
+  }
+  .locateUs{
+    h2{
+      font-size: 50px;
+      padding: 20px 0;
+      margin-top:20px;
+    }
+    p{
+      font-size: 22px;
+      line-height: .8;
+    }
+  }
+  .page-id-14 {
+    .contact-us {
+      top:0;
+      min-height: 526px;
+    }
+    .whiteBand-2{
+      height:200px;
+    }
+    .stay-updated{
+      margin-top: 0;
+    }
+    .whiteBand-2{
+      position: relative;;
+    }
+  }
+  .employeeLinks{
+    margin-top:45px;
+    display: block;
+    background: url(./images/employee-background.png) no-repeat;
+    background-size: cover;
+    //background-position-x: 150px;
+    width: 100%;
+    height: 96vh;
+    .employLinksContent{
+      margin-top:100px;
+      background-color: rgba(255, 255, 255, .5);
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 5px;
+      padding: 20px;
+    }
+  }
+  .employeeLinks {
+
+    p{
+      font-size: 22px;
+    }
+    a.btn-main{
+      font-size: 22px;
+      width: 280px;
+    }
+  }
+  .whiteBackground{
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+  }
   footer{
     height:150px;
     .footerForm{
       a{
         //margin-left: 90px;
       }
+      h2{
+        margin-top:10px
+      }
+      #members-widget-login-3{
+        form{
+          input{
+            width:40%;
+            float: left;
+            margin-top: 8px;
+            height: 24px;
+          }
+          .login-submit{
+            input{
+              margin: 6px 6% 0 0;
+              float: right;
+            }
+          }
+        }
+      }
+      label{
+        float: left;
+        position: relative;
+        top: 37px;
+        left: 39px;
+        //font-size: 16px;
+      }
     }
     .blueFooter{
-      height: 105px;
+      height: 116px;
+      margin-top: -20px
     }
     .whiteFooter{
-      height:40px;
+      height:44px;
       .footerLogo{
         a{
           img{
@@ -393,9 +523,44 @@ $screen-sm-min: 768px;
       }
     }
   }
+  p.copyright{
+    text-align: center;
+    margin-top: -18px;
+    font-size: 18px;
+  }
+  p.childress{
+    text-align: center;
+    margin-top: -18px;
+    font-size: 18px;
+  }
+  .page-content{
+    background: url(./images/single-background.png) no-repeat;
+    background-size: contain;
+    background-position-x: -140px ;
+    background-position-y: 190px ;
+  }
+  .single{
+    .blogContainer{
+      min-height: 900px;
+    }
+  }
+
+  .wp-pagenavi{
+    padding-bottom: 50px;
+  }
 }
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
 @media (min-width: $screen-md-min) {
+  .blue-button, .masthead a.btn-main{
+    font-size: 20px;
+    line-height: 1;
+  }
+  .navbar-default .navbar-nav li a{
+    font-size: 22px;
+  }
+  .header{
+    margin-top: 100px;
+  }
   .headerImage{
     height:410px;
     span.whiteArea{
@@ -411,7 +576,7 @@ $screen-sm-min: 768px;
       font-weight: 900;
     }
     p{
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 500;
     }
     img{
@@ -439,6 +604,11 @@ $screen-sm-min: 768px;
   .climbing-wall{
     max-height: 472px;
   }
+  .solid-foundation{
+    h1{
+      margin-right: 77px;
+    }
+  }
   .solidFoundationContentArea{
     padding: 0 100px;
   }
@@ -447,7 +617,7 @@ $screen-sm-min: 768px;
   }
   .logistics{
     background-position-x: 520px;
-    background-position-y: 300px;
+    //background-position-y: 300px;
   }
   .engineeringBackground{
     background-position-x: 0px;
@@ -483,6 +653,30 @@ $screen-sm-min: 768px;
     }
 
   }
+  .mapArea{
+    iframe{
+      height:500px;
+    }
+  }
+  .locateUs{
+    padding:20px 80px;
+    h2{
+      font-size: 70px;
+    }
+    p{
+      font-size: 30px;
+    }
+  }
+  .page-id-14{
+    .contactBackground {
+      background-position-y: 232px;
+    }
+  }
+  .employeeLinks {
+    .employLinksContent{
+
+    }
+  }
 
   footer{
     .footerForm{
@@ -490,10 +684,13 @@ $screen-sm-min: 768px;
         margin-left: 160px;
       }
     }
+    .blueFooter{
+      //margin-top:-37px;
+    }
     .whiteFooter{
       .footerMenu{
         ul.menu{
-          width:600px;
+          width:700px;
           li{
             &:nth-child(1){
               margin-left: 125px;
@@ -503,14 +700,26 @@ $screen-sm-min: 768px;
       }
     }
   }
+  p.copyright{
+    //margin-left: 172px;
+  }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
   .masthead{
     a.btn-main{
       padding: 10px;
-      font-size: 18px;
+      font-size: 22px;
     }
+  }
+  .navbar-default .navbar-nav{
+    width:430px;
+  }
+  .navbar-right{
+    margin-right: -60px;
+  }
+  .navbar-default .navbar-nav li a {
+    font-size: 30px;
   }
   .headerLogo{
     margin-top: 4px;
@@ -527,12 +736,50 @@ $screen-sm-min: 768px;
   }
   .capabilities{
     margin-top: -360px;
+    h1{
+      font-size: 70px;
+    }
+  }
+  .capabilitiesContentLink{
+    h2{
+      font-size: 24px;
+    }
+    p{
+      font-size: 24px;
+    }
   }
   .frogMan{
     max-height: 480px;
   }
+  .businessAnalytics{
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
   .our-clients{
+    h1{
+      font-size: 70px
+    }
     margin-top: -360px;
+  }
+  .solid-foundation{
+    h1{
+      font-size: 70px
+    }
+  }
+  .solidFoundationContentArea{
+    p{
+      font-size: 24px;
+    }
+  }
+  .solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main{
+    height:38px;
+    width:105px;
+    border-radius:19px;
+    font-size: 24px;
   }
   .climbing-wall{
     max-height: 571px;
@@ -544,11 +791,120 @@ $screen-sm-min: 768px;
 
     background-position-y: bottom;
   }
-  .logistics {
-    background-position-x: 717px;
-    background-position-y: 210px;
+  .blogArea{
+    h1{
+      font-size: 70px;
+    }
   }
+  .contact-us{
+    h1{
+      font-size: 70px;
+    }
+  }
+  .contactBackground {
+    background-position-y: 115px;
+  }
+  .contactInfo{
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 24px;
+    }
 
+  }
+  .logistics {
+    background-position-x: 780px;
+    //background-position-y: 210px;
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .engineering{
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .cyber{
+    h1{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .education{
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .research{
+    h1{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .about{
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .team{
+    h1{
+      font-size: 70px;
+    }
+  }
+  .employeeInfo{
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 24px;
+    }
+  }
+  .page-id-12 .background, .page-id-14 .background{
+    background-size: 59%;;
+  }
+  .employeeLinks{
+    .employLinksContent{
+      //padding: 0 80px;
+
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+  .contractArea{
+    h1{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 32px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
   footer{
     .footerForm{
       a{
@@ -567,9 +923,15 @@ $screen-sm-min: 768px;
       }
     }
   }
+  p.copyright {
+    //margin-left: 245px;
+  }
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {
+  .navbar-right {
+    margin-right: -148px;
+  }
   .capabilities{
     margin-top: -426px;
   }
@@ -593,8 +955,8 @@ $screen-sm-min: 768px;
     background-position-y: -161px;
   }
   .logistics {
-    background-position-x: 928px;
-    background-position-y: 103px;
+    background-position-x: 950px;
+    //background-position-y: 103px;
   }
   .engineering {
     background-position-y: -227px;
@@ -602,5 +964,15 @@ $screen-sm-min: 768px;
   .contactBackground{
     position: relative;
     top:60px;
+  }
+  .page-id-14 {
+    .contactBackground{
+      top:0;
+    }
+  }
+  .employeeLinks {
+    .employLinksContent{
+      margin-left:-150px;
+    }
   }
 }
