@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
         <div class="row">
             <!-- section -->
         <section class="col-xs-12 single page-content">

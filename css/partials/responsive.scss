@@ -406,8 +406,12 @@ $screen-sm-min: 768px;
   }
   .page-id-14 {
     .contact-us {
+      margin-top:0;
       top:0;
       min-height: 526px;
+      h1{
+        margin-top: 50px;
+      }
     }
     .whiteBand-2{
       height:200px;

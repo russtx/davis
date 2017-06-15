@@ -78,7 +78,7 @@
           <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
         <div class="clearfix"></div>
-        <a href="#" class="btn-main left-side">OUR BLOG</a>
+        <a href="<?php echo home_url(); ?>/our-blog/" class="btn-main left-side">OUR BLOG</a>
         <a href="#" class="btn-main right-side">SUBSCRIBE</a>
       </div><!-- row -->
     </div><!-- container -->

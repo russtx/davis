@@ -22,6 +22,7 @@ import bootstrap
 /*======================================= Variables =================================================*/
 /*======================================= mixins =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Chathura");
 .blue-button, .masthead a.btn-main {
   display: block;
   position: relative;
@@ -2038,8 +2039,12 @@ p.childress a {
     line-height: .8;
   }
   .page-id-14 .contact-us {
+    margin-top: 0;
     top: 0;
     min-height: 526px;
+  }
+  .page-id-14 .contact-us h1 {
+    margin-top: 50px;
   }
   .page-id-14 .whiteBand-2 {
     height: 200px;
