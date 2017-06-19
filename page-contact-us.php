@@ -86,10 +86,13 @@
   <div class="whiteBand-2">
     <h2>FOLLOW US ON SOCIAL MEDIA</h2>
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-4">
         <div class="twitter"></div>
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-4">
+        <a href="<?php the_field('linkedin', 'option'); ?>" target="_blank" class="linkedIn wow bounce"></a>
+      </div>
+      <div class="col-xs-4">
         <div class="facebook"></div>
       </div>
     </div><!-- row -->

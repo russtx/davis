@@ -48,6 +48,7 @@
         <div class="col-xs-12 col-sm-2 col-sm-offset-8 headerSocials">
           <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
           <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+          <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="linkedIn"></a>
         </div>
         <div class="col-xs-12 col-sm-7 col-sm-offset-2 navButton">
           <nav class="navbar navbar-default" role="navigation">

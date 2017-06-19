@@ -76,7 +76,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 10px 0 0 15px;
+    margin: 10px 0 0 10px;
     &:hover{
       background-position-y: 0px;
     }
@@ -87,9 +87,20 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 10px 0 0 15px;
+    margin: 10px 0 0 10px;
     &:hover{
       background-position-y: 0px;
+    }
+  }
+  .linkedIn{
+    background: url(./images/linkedin-sprite-4.png) no-repeat;
+    background-position-y: -26px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    &:hover{
+      background-position-y: 1.5px;
     }
   }
 }

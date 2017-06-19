@@ -17,7 +17,7 @@ footer{
     background-color: $blue;
     color: #fff;
     height:100px;
-    margin-top:-16px;
+    margin-top:-40px;
     h3{
       text-align: center;
       font-size: 18px;
@@ -140,6 +140,7 @@ footer{
     }
     .footerMenu{
       ul.menu{
+        height:32px;
         list-style: none;
         width:200px;
         margin:5px 0 0 -15px;
@@ -168,7 +169,7 @@ footer{
         display: inline-block;
         width: 30px;
         height: 30px;
-        margin: 0px 0 0 42px;
+        margin: -6px 0 0 5px;
         float:left;
         &:hover{
           background-position-y: 0px;
@@ -180,10 +181,22 @@ footer{
         display: inline-block;
         width: 30px;
         height: 30px;
-        margin: 0px 0 0 0px;
+        margin: -6px 0 0 5px;
         float:left;
         &:hover{
           background-position-y: 0px;
+        }
+      }
+      .linkedIn{
+        background: url(./images/linkedin-sprite-4.png) no-repeat;
+        background-position-y: -26px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: -6px 0 0 5px;
+        float:left;
+        &:hover{
+          background-position-y: 1.5px;
         }
       }
     }

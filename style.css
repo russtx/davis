@@ -227,7 +227,7 @@ body {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 10px 0 0 15px;
+  margin: 10px 0 0 10px;
 }
 
 .headerSocials .twitter:hover {
@@ -240,11 +240,24 @@ body {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 10px 0 0 15px;
+  margin: 10px 0 0 10px;
 }
 
 .headerSocials .facebook:hover {
   background-position-y: 0px;
+}
+
+.headerSocials .linkedIn {
+  background: url(./images/linkedin-sprite-4.png) no-repeat;
+  background-position-y: -26px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0 0 10px;
+}
+
+.headerSocials .linkedIn:hover {
+  background-position-y: 1.5px;
 }
 
 .in {
@@ -654,6 +667,18 @@ body {
 }
 
 .whiteBand-2 .twitter:hover {
+  opacity: .5;
+}
+
+.whiteBand-2 .linkedIn {
+  background: url(./images/linkedin-2.png) no-repeat;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+}
+
+.whiteBand-2 .linkedIn:hover {
   opacity: .5;
 }
 
@@ -1542,7 +1567,7 @@ footer .blueFooter {
   background-color: #123d61;
   color: #fff;
   height: 100px;
-  margin-top: -16px;
+  margin-top: -40px;
 }
 
 footer .blueFooter h3 {
@@ -1672,6 +1697,7 @@ footer .whiteFooter .footerLogo a img {
 }
 
 footer .whiteFooter .footerMenu ul.menu {
+  height: 32px;
   list-style: none;
   width: 200px;
   margin: 5px 0 0 -15px;
@@ -1702,7 +1728,7 @@ footer .whiteFooter .footerSocials .twitter {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 0px 0 0 42px;
+  margin: -6px 0 0 5px;
   float: left;
 }
 
@@ -1716,12 +1742,26 @@ footer .whiteFooter .footerSocials .facebook {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin: 0px 0 0 0px;
+  margin: -6px 0 0 5px;
   float: left;
 }
 
 footer .whiteFooter .footerSocials .facebook:hover {
   background-position-y: 0px;
+}
+
+footer .whiteFooter .footerSocials .linkedIn {
+  background: url(./images/linkedin-sprite-4.png) no-repeat;
+  background-position-y: -26px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -6px 0 0 5px;
+  float: left;
+}
+
+footer .whiteFooter .footerSocials .linkedIn:hover {
+  background-position-y: 1.5px;
 }
 
 p.copyright {
@@ -1764,10 +1804,22 @@ p.childress a {
     color: #123d61;
     padding: 10px;
   }
+  .navbar-right {
+    margin-right: 10px;
+  }
   .headerSocials {
     display: block;
     position: relative;
     top: -47px;
+  }
+  .headerSocials .twitter {
+    margin: 10px 0 0 0px;
+  }
+  .headerSocials .facebook {
+    margin: 10px 0 0 0px;
+  }
+  .headerSocials .linkedIn {
+    margin: 10px 0 0 0px;
   }
   .headerLogo {
     margin-top: -70px;
@@ -1895,6 +1947,7 @@ p.childress a {
   }
   .whiteBand-2 h2 {
     font-size: 40px;
+    padding: 18px 0 0 0;
   }
   .background {
     background-size: contain;
@@ -2174,10 +2227,10 @@ p.childress a {
     width: 60px;
   }
   footer .whiteFooter .footerMenu ul.menu {
-    width: 450px;
+    width: 400px;
   }
   footer .whiteFooter .footerMenu ul.menu li {
-    margin: 0 30px 0 0;
+    margin: 0 20px 0 0;
   }
   footer .whiteFooter .footerMenu ul.menu li:nth-child(1) {
     margin-left: 40px;
@@ -2190,6 +2243,9 @@ p.childress a {
     margin: 5px 0 0 10px;
   }
   footer .whiteFooter .footerSocials .facebook {
+    margin: 4px 0 0 5px;
+  }
+  footer .whiteFooter .footerSocials .linkedIn {
     margin: 4px 0 0 5px;
   }
   p.copyright {

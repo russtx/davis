@@ -28,10 +28,22 @@ $screen-sm-min: 768px;
       }
     }
   }
+  .navbar-right{
+    margin-right: 10px;
+  }
   .headerSocials{
     display: block;
     position: relative;
     top:-47px;
+    .twitter{
+      margin: 10px 0 0 0px;
+    }
+    .facebook{
+      margin: 10px 0 0 0px;
+    }
+    .linkedIn{
+      margin: 10px 0 0 0px;
+    }
   }
   .headerLogo{
     margin-top:-70px;
@@ -181,6 +193,7 @@ $screen-sm-min: 768px;
     padding-top: 40px;
     h2{
       font-size: 40px;
+      padding: 18px 0 0 0;
     }
   }
   .background{
@@ -505,9 +518,9 @@ $screen-sm-min: 768px;
       }
       .footerMenu{
         ul.menu{
-          width:450px;
+          width:400px;
           li{
-            margin: 0 30px 0 0;
+            margin: 0 20px 0 0;
             &:nth-child(1){
               margin-left:40px;
             }
@@ -523,6 +536,9 @@ $screen-sm-min: 768px;
           margin: 5px 0 0 10px;
         }
         .facebook{
+          margin:4px 0 0 5px;
+        }
+        .linkedIn{
           margin:4px 0 0 5px;
         }
       }

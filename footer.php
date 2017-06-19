@@ -22,13 +22,14 @@
         <div class="col-xs-2 col-sm-2 footerLogo">
           <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="Footer Logo" /></a>
         </div>
-        <div class="col-xs-5 col-sm-8 footerMenu">
+        <div class="col-xs-10 col-sm-7 footerMenu">
             <?php wp_nav_menu(); ?>
-
         </div>
-        <div class="col-xs-5 col-sm-2 footerSocials">
+
+        <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 footerSocials">
           <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
           <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+          <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="linkedIn"></a>
         </div>
         <div class="clearfix"></div>
         <div class="col-xs-6">

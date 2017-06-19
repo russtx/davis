@@ -365,6 +365,18 @@
       opacity:.5;
     }
   }
+  .linkedIn{
+    background: url(./images/linkedin-2.png) no-repeat;
+    //background-position-y: -27px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0px auto;
+    //float: right;
+    &:hover{
+      opacity:.5;
+    }
+  }
   .facebook{
     background: url(./images/facebook-2.png) no-repeat;
     //background-position-y: -27px;
