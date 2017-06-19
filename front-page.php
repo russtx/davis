@@ -8,13 +8,13 @@
 		<div class="header">
 
 				<div class="headerLogo wow slideInLeft">
-		      <a href="<?php echo home_url(); ?>"><img  src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Header Logo" /></a>
+		      <a href="<?php echo home_url(); ?>"><img  src="<?php echo get_template_directory_uri(); ?>/images/logo-1.png" alt="Header Logo" /></a>
 		    </div>
 				<div class=" headerImage">
 					<span class="whiteArea  ">
-						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/inc-500.png" alt="Services Logo" />
-						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/fast-50.png" alt="Services Logo" />
-						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/star-award.png" alt="Services Logo" />
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/inc-500-1.png" alt="Services Logo" />
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/fast-50-1.png" alt="Services Logo" />
+						<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/star-award-1.png" alt="Services Logo" />
 					</span>
 				</div>
 					<div class="container">
@@ -25,7 +25,7 @@
 										<img src="<?php echo get_template_directory_uri(); ?>/images/services.png" alt="Services Logo" />
 									</div>
 									<div class="col-xs-9">
-										<h2>SERVICES</h2>
+										<h2>CAPABILITIES</h2>
 											<?php the_field('services_content') ?>
 										</div>
 								</a>
@@ -44,10 +44,10 @@
 							<div class="col-xs-12 col-sm-4 training">
 								<a href="<?php echo home_url(); ?>/capabilities/">
 									<div class="col-xs-3">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/training.png" alt="Training Logo" />
+										<img src="<?php echo get_template_directory_uri(); ?>/images/jobs-icon.png" alt="Training Logo" />
 									</div>
 									<div class="col-xs-9">
-										<h2>TRAINING</h2>
+										<h2>JOBS</h2>
 											<?php the_field('training_content') ?>
 									</div>
 								</a>
@@ -111,25 +111,25 @@
 	</div>
 	<div class="section third " id="section2">
 		<div class="our-clients">
-			<h1>OUR CLIENTS</h1>
+			<h1>CLIENTS</h1>
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-sm-2 clientArea">
-						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/national-guard.png" alt="National Guard" />
-					</div>
-					<div class="col-xs-6 col-sm-2 clientArea">
-						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/army.png" alt="Army" />
-					</div>
-					<div class="col-xs-6 col-sm-2 clientArea">
-						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/homeland-security.png" alt="Homeland Security" />
-					</div>
-					<div class="col-xs-6 col-sm-2 clientArea">
+				<div class="row row-centered">
+					<div class="col-xs-6 col-sm-2 col-centered clientArea">
 						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/marines.png" alt="Marine Corps" />
 					</div>
-					<div class="col-xs-6 col-sm-2 clientArea">
+					<!--<div class="col-xs-6 col-sm-2 col-centered clientArea">
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/national-guard.png" alt="National Guard" />
+					</div>-->
+					<div class="col-xs-6 col-sm-2 col-centered clientArea">
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/army.png" alt="Army" />
+					</div>
+					<div class="col-xs-6 col-sm-2 col-centered clientArea">
+						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/homeland-security.png" alt="Homeland Security" />
+					</div>
+					<div class="col-xs-6 col-sm-2 col-centered clientArea">
 						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/navy.png" alt="Navy" />
 					</div>
-					<div class="col-xs-6 col-sm-2 clientArea">
+					<div class="col-xs-6 col-sm-2 col-centered clientArea">
 						<img class="wow bounce " src="<?php echo get_template_directory_uri(); ?>/images/air-force.png" alt="Air Force" />
 					</div>
 				</div><!-- row -->
@@ -142,10 +142,41 @@
 			<div class="mountain wow slideInLeft">
 				<div class="container">
 					<div class="row">
-						<h1>A SOLID FOUNDATION</h1>
-						<div class="col-xs-9 col-xs-offset-3 solidFoundationContentArea">
-
-								<?php the_field('solid_foundation_content'); ?>
+						<h1>TESTIMONIALS</h1>
+						<div class="col-xs-12 col-sm-9 col-sm-offset-3 solidFoundationContentArea">
+								<section id="testimonialSlider" class="carousel slide" data-ride="carousel">
+						      <div class="carousel-inner " role="listbox ">
+						        <?php
+						        // check if the repeater field has rows of data
+						        if( have_rows('testimonials') ):
+						         	// loop through the rows of data
+						           $i=1; while ( have_rows('testimonials') ) : the_row(); ?>
+						            <div class="item <?php if ($i == 1) echo 'active'; ?> ">
+						              <div id="noPhoto"></div>
+						              <div class="caption-wrapper">
+						                <div class="caption">
+						                  <p>&ldquo;</p><?php the_sub_field('testimonial_content');?><p>&rdquo;</p>
+															<span><p><?php the_sub_field('testimonial_author'); ?></p></span>
+						                </div><!-- caption -->
+						              </div><!-- caption-wrapper -->
+						            </div><!-- item -->
+						            <?php $i++;  endwhile;
+						            else :
+						            // no rows found
+						          endif;
+						          ?>
+						      </div><!-- carousel-inner -->
+						          <!-- Controls -->
+						        <a class="left carousel-control" href="#hp-hero" role="button" data-slide="prev">
+						          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						          <span class="sr-only">Previous</span>
+						        </a>
+						        <a class="right carousel-control" href="#hp-hero" role="button" data-slide="next">
+						          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						          <span class="sr-only">Next</span>
+						        </a>
+						    </section><!-- testimonialSlider -->
+								<!-- original Buttons -->
 								<a href="<?php echo home_url(); ?>/about/" class="btn-main left-side">INFORMATION</a>
 								<a href="<?php echo home_url(); ?>/about/#team" class="btn-main right-side">OFFICERS</a>
 						</div>
@@ -157,10 +188,10 @@
 						<div class="row">
 							<div class="col-xs-6 whiteBandContent  ">
 								<h2>
-									TEAMS &amp;<br />
+									TEAMING &amp;<br />
 									BUSINESS OPPS
 								</h2>
-								<a href="<?php echo home_url(); ?>/contracts/" class="btn-main left-side ">LEARN MORE</a>
+								<a href="<?php echo home_url(); ?>/contact-us/" class="btn-main left-side ">LEARN MORE</a>
 							</div>
 							<div class="col-xs-6 whiteBandContent ">
 								<h2>

@@ -46,8 +46,8 @@ $screen-sm-min: 768px;
       height:100px;
       top:245px;
       img{
-        width: 75px;
-        margin: 15px 0 0 20px;
+        width: 90px;
+        margin: 12px 0 0 20px;
         &:nth-child(1){
           margin-left:100px
         }
@@ -108,9 +108,10 @@ $screen-sm-min: 768px;
     padding: 0 50px;
 
     p{
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 1;
+    line-height: .8;
+    padding:0 30px 0 30px;
     }
     a.btn-main{
       margin-top:60px;
@@ -548,9 +549,15 @@ $screen-sm-min: 768px;
       min-height: 900px;
     }
   }
-
   .wp-pagenavi{
     padding-bottom: 50px;
+  }
+  .fp-slides {
+    height: 330px !important;
+  }
+  .carousel-inner {
+    margin-top: 0px;
+    min-height: 285px;
   }
 }
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
@@ -602,7 +609,7 @@ $screen-sm-min: 768px;
   }
   .clientArea{
     img{
-      width: 122px;
+      width: 140px;
     }
   }
   .climbing-wall{
@@ -615,6 +622,9 @@ $screen-sm-min: 768px;
   }
   .solidFoundationContentArea{
     padding: 0 100px;
+    p{
+      font-size: 32px;
+    }
   }
   .background{
     background-position-x: 493px;
@@ -707,7 +717,9 @@ $screen-sm-min: 768px;
   p.copyright{
     //margin-left: 172px;
   }
+
 }
+
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
   .masthead{
@@ -726,18 +738,25 @@ $screen-sm-min: 768px;
     font-size: 30px;
   }
   .headerLogo{
-    margin-top: 4px;
+    margin-top: -145px;
+    img{
+      width:350px;
+    }
   }
   .headerImage{
-    height:490px;
+    height:500px;
     span.whiteArea{
-      top:380px;
+      top:390px;
       height: 110px;
       img:nth-child(1){
         margin-left:160px;
       }
     }
   }
+  .services p, .contracts p, .training p {
+    font-size: 24px;
+  }
+
   .capabilities{
     margin-top: -360px;
     h1{
@@ -745,6 +764,9 @@ $screen-sm-min: 768px;
     }
   }
   .capabilitiesContentLink{
+    img{
+      width:90px;
+    }
     h2{
       font-size: 24px;
     }
@@ -776,14 +798,21 @@ $screen-sm-min: 768px;
   }
   .solidFoundationContentArea{
     p{
-      font-size: 24px;
+      font-size: 40px;
     }
+   span p:nth-child(1){
+     margin-top: -8px;
+     font-size: 28px;
+     }
   }
   .solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main{
     height:38px;
     width:105px;
     border-radius:19px;
     font-size: 24px;
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+    margin-top: -40px;
   }
   .climbing-wall{
     max-height: 571px;
@@ -947,7 +976,7 @@ $screen-sm-min: 768px;
     margin-top:-435px;
   }
   .climbing-wall{
-    max-height: 755px;
+    max-height: 700px;
   }
   .mountain{
     background-position-y: -270px;

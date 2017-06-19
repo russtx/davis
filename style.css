@@ -339,6 +339,10 @@ body {
   margin: 6px 0 0 0;
 }
 
+.services p, .contracts p, .training p {
+  line-height: .8;
+}
+
 .capabilities {
   margin-top: 100px;
 }
@@ -464,12 +468,30 @@ body {
 
 .solidFoundationContentArea p {
   text-align: right;
-  font-size: 20px;
+  font-size: 24px;
   line-height: .8;
   padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  color: #123d61;
+  margin: 0 20px 0 20px;
+  color: #fff;
   font-weight: 600;
+}
+
+.solidFoundationContentArea p:nth-child(1) {
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.solidFoundationContentArea p:nth-child(3) {
+  font-size: 50px;
+  text-align: right;
+}
+
+.solidFoundationContentArea span p:nth-child(1) {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 24px;
+  color: #123d61;
 }
 
 .solidFoundationContentArea a.btn-main {
@@ -1462,6 +1484,41 @@ a.logout {
   margin: 10px 0 10px 0px;
 }
 
+.fp-slide {
+  height: 395px;
+  display: block;
+  padding: 25px;
+  background-color: rgba(18, 61, 97, 0.5);
+}
+
+.fp-slides {
+  height: 320px !important;
+}
+
+.fp-slidesContainer {
+  height: 320px !important;
+}
+
+.fp-tableCell {
+  height: 320px !important;
+}
+
+.carousel-inner {
+  margin-top: 24px;
+  min-height: 214px;
+  vertical-align: top;
+}
+
+a.right.carousel-control {
+  background-color: transparent;
+  background-image: none;
+}
+
+a.left.carousel-control {
+  background-color: transparent;
+  background-image: none;
+}
+
 /*================Footer =============*/
 footer {
   width: 100%;
@@ -1727,8 +1784,8 @@ p.childress a {
     top: 245px;
   }
   .headerImage span.whiteArea img {
-    width: 75px;
-    margin: 15px 0 0 20px;
+    width: 90px;
+    margin: 12px 0 0 20px;
   }
   .headerImage span.whiteArea img:nth-child(1) {
     margin-left: 100px;
@@ -1780,9 +1837,10 @@ p.childress a {
     padding: 0 50px;
   }
   .solidFoundationContentArea p {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 1;
+    line-height: .8;
+    padding: 0 30px 0 30px;
   }
   .solidFoundationContentArea a.btn-main {
     margin-top: 60px;
@@ -2156,6 +2214,13 @@ p.childress a {
   .wp-pagenavi {
     padding-bottom: 50px;
   }
+  .fp-slides {
+    height: 330px !important;
+  }
+  .carousel-inner {
+    margin-top: 0px;
+    min-height: 285px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) ==================================================================================================*/
@@ -2202,7 +2267,7 @@ p.childress a {
     max-height: 388px;
   }
   .clientArea img {
-    width: 122px;
+    width: 140px;
   }
   .climbing-wall {
     max-height: 472px;
@@ -2212,6 +2277,9 @@ p.childress a {
   }
   .solidFoundationContentArea {
     padding: 0 100px;
+  }
+  .solidFoundationContentArea p {
+    font-size: 32px;
   }
   .background {
     background-position-x: 493px;
@@ -2292,23 +2360,32 @@ p.childress a {
     font-size: 30px;
   }
   .headerLogo {
-    margin-top: 4px;
+    margin-top: -145px;
+  }
+  .headerLogo img {
+    width: 350px;
   }
   .headerImage {
-    height: 490px;
+    height: 500px;
   }
   .headerImage span.whiteArea {
-    top: 380px;
+    top: 390px;
     height: 110px;
   }
   .headerImage span.whiteArea img:nth-child(1) {
     margin-left: 160px;
+  }
+  .services p, .contracts p, .training p {
+    font-size: 24px;
   }
   .capabilities {
     margin-top: -360px;
   }
   .capabilities h1 {
     font-size: 70px;
+  }
+  .capabilitiesContentLink img {
+    width: 90px;
   }
   .capabilitiesContentLink h2 {
     font-size: 24px;
@@ -2335,13 +2412,20 @@ p.childress a {
     font-size: 70px;
   }
   .solidFoundationContentArea p {
-    font-size: 24px;
+    font-size: 40px;
+  }
+  .solidFoundationContentArea span p:nth-child(1) {
+    margin-top: -8px;
+    font-size: 28px;
   }
   .solidFoundationButton, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main, .single .subButton a.btn-main, .solidFoundationContentArea a.btn-main, .whiteBand a.btn-main, .stay-updated a.btn-main {
     height: 38px;
     width: 105px;
     border-radius: 19px;
     font-size: 24px;
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    margin-top: -40px;
   }
   .climbing-wall {
     max-height: 571px;
@@ -2460,7 +2544,7 @@ p.childress a {
     margin-top: -435px;
   }
   .climbing-wall {
-    max-height: 755px;
+    max-height: 700px;
   }
   .mountain {
     background-position-y: -270px;

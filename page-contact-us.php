@@ -9,12 +9,12 @@
               <h3>ADDRESS</h3>
               <p>
                 475 AQUIA TOWNE CENTER DRIVE<BR />
-                SUITE #401 STAFFORD, VA 22504
+                SUITE #401 STAFFORD, VA 22554
               </p>
             </div>
             <div class="col-xs-6 col-sm-12">
               <h3>PHONE</h3>
-              <p>540. 548. 5980</p>
+              <p>540 548 5980</p>
               <h3>FAX</h3>
               <p>540 542 3079</p>
             </div>

@@ -73,7 +73,7 @@
     margin: 6px 0 0 0;
   }
   p{
-
+    line-height: .8;
   }
 }
 .capabilities{
@@ -191,12 +191,27 @@
 
   p{
     text-align: right;
-    font-size: 20px;
+    font-size: 24px;
     line-height: .8;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    color: $blue;
+    margin: 0 20px 0 20px;
+    color: #fff;
     font-weight: 600;
+    &:nth-child(1){
+      font-size: 50px;
+      text-align: left;
+      margin-bottom: -20px;
+    }
+    &:nth-child(3){
+      font-size: 50px;
+      text-align: right;
+    }
+  }
+  span p:nth-child(1){
+    text-align: right;
+    margin-top:5px;
+    font-size: 24px;
+    color: $blue;
   }
   a.btn-main{
     @extend .solidFoundationButton;
@@ -1115,5 +1130,33 @@ a.logout{
     padding: 0px 0 0 0;
     margin: 10px 0 10px 0px;
   }
-
+}
+//testimonial solidFoundationContentArea.fp-slide, .fp-slidesContainer {
+.fp-slide {
+  height: 395px;
+  display: block;
+  padding: 25px;
+  background-color: $blue-trans;
+}
+.fp-slides{
+  height: 320px!important;
+}
+.fp-slidesContainer{
+  height: 320px!important;
+}
+.fp-tableCell{
+  height:320px!important;
+}
+.carousel-inner{
+  margin-top:24px;
+  min-height: 214px;
+  vertical-align: top;
+}
+a.right.carousel-control{
+  background-color: transparent;
+  background-image: none;
+}
+a.left.carousel-control{
+  background-color: transparent;
+  background-image: none;
 }
