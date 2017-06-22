@@ -33,7 +33,7 @@
   <body <?php body_class(isset($class) ? $class : ''); ?>>
     <div class="masthead">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-4 col-sm-2">
          <?php
           if ( is_user_logged_in() ) {
               echo '<a class="btn-main left" href="' . wp_logout_url( home_url() ) . '">LOGOUT</a>';
@@ -42,7 +42,12 @@
           }
           ?>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-4 col-sm-1">
+          <a href="<?php echo home_url(); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" alt="Header Logo" class="headerLogoTop" />
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-sm-offset-7">
           <a href="<?php echo home_url(); ?>/apply-now/" class="btn-main right">APPLY NOW</a>
         </div>
         <div class="col-xs-12 col-sm-2 col-sm-offset-8 headerSocials">
@@ -51,6 +56,7 @@
           <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="linkedIn"></a>
         </div>
         <div class="col-xs-12 col-sm-7 col-sm-offset-2 navButton">
+
           <nav class="navbar navbar-default" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">

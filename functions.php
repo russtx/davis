@@ -401,9 +401,6 @@ function my_acf_init() {
 }
 add_action('acf/init', 'my_acf_init');
 
-
-
-
 function my_login_redirect( $url, $request, $user ){
     if( $user && is_object( $user ) && is_a( $user, 'WP_User' ) ) {
         if( $user->has_cap( 'administrator' ) ) {

@@ -23,7 +23,7 @@ $screen-sm-min: 768px;
       li{
         a{
           color:$blue;
-          padding:10px;
+          padding:8px;
         }
       }
     }
@@ -79,6 +79,9 @@ $screen-sm-min: 768px;
   .capabilitiesContentLink{
     h2{
       font-size: 14px;
+    }
+    p{
+      padding: 0;
     }
   }
   .frogMan{
@@ -584,6 +587,7 @@ $screen-sm-min: 768px;
   }
   .navbar-default .navbar-nav li a{
     font-size: 22px;
+    padding: 10px;
   }
   .header{
     margin-top: 100px;

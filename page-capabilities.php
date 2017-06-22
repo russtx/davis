@@ -6,46 +6,46 @@
 			<h1>CAPABILITIES</h1>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+					<div class="col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/capabilities/#businessAnalytics">
-							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/business-icon.png" alt="Business Analytics" />
 							<h2>BUSINESS ANALYTICS</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('business_analytics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('business_analytics', 'option'); ?>
 						</a>
 					</div>
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+					<div class="col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/capabilities/#logistics">
-							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/logistics-icon.png" alt="Logistics" />
 							<h2>LOGISTICS</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('logistics', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('logistics', 'option'); ?>
 						</a>
 					</div>
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+					<div class="col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/capabilities/#engineering">
-							<img class="animated bounceInLeft " src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/engineering-icon.png" alt="Engineering" />
 							<h2>ENGINEERING</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('engineering', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('engineering', 'option'); ?>
 						</a>
 					</div>
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+					<div class=" col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/capabilities/#cyber">
-							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/cyber-icon.png" alt="Cyber" />
 							<h2>CYBER</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('cyber', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('cyber', 'option'); ?>
 						</a>
 					</div>
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
+					<div class=" col-sm-2 capabilitiesContentLink">
 						<a href="<?php echo home_url(); ?>/capabilities/#education">
-							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/education-icon.png" alt="Education" />
 							<h2>EDUCATION</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('education', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('education', 'option'); ?>
 						</a>
 					</div>
-					<div class="col-xs-12 col-sm-2 capabilitiesContentLink">
-						<a href="<?php echo home_url(); ?>/capabilities/research">
-							<img class="animated bounceInRight " src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
+					<div class=" col-sm-2 capabilitiesContentLink">
+						<a href="<?php echo home_url(); ?>/capabilities/#research">
+							<img class="wow bounce" src="<?php echo get_template_directory_uri(); ?>/images/rd-icon.png" alt="Research &amp; Development" />
 							<h2>RESEARCH &#38; DEVELOPMENT</h2>
-							<p><?php echo $excerpt = wp_trim_words( get_field('research_&_development', 'option' ), $num_words = 10, $more = '...' ); ?></p>
+							<?php the_field('research_&_development', 'option'); ?>
 						</a>
 					</div>
 				</div><!-- row -->
