@@ -4,10 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Chathura" rel="stylesheet">
-    <script src="https://use.typekit.net/pbi3vhp.js"></script>
+    <!--<script src="https://use.typekit.net/pbi3vhp.js"></script>
     <script src="https://use.typekit.net/kpp4ocf.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
